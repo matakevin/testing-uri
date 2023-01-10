@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite failures="1" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="0.10478">
-    <testcase classname="Student Admission Test Scenarios" name="Student Admission" time="0.10478">
+<testsuite failures="1" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="0.100276">
+    <testcase classname="Student Admission Test Scenarios" name="Student Admission" time="0.100276">
         <failure message="The scenario has pending or undefined step(s)"><![CDATA[Given a user is on the login page "https://mexil.it/chroma_tech_academy/dev/site/login".skipped
 When user logs in with valid credentials username "general@teacher.com" and password "123456".skipped
 And navigates to Student Information Module.................................skipped
-And navigates to Student Admission Submodule................................undefined
+And navigates to Student Admission Submodule................................skipped
+Then user is directed to Student Admission page with the text "Student Admission".undefined
 ]]></failure>
     </testcase>
 </testsuite>
