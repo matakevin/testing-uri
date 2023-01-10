@@ -1,0 +1,6 @@
+com/chroma/utils/CucumberLogUtils.class
+com/chroma/web/WebDriverUtils.class
+com/chroma/utils/FrameworkConstants.class
+com/chroma/web/CommonMethods.class
+com/chroma/utils/ScreenShots.class
+com/chroma/utils/ConfigReader.class

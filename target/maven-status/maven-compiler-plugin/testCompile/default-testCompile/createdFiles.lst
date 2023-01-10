@@ -1,0 +1,5 @@
+com/chroma/runners/RunSmokeTest.class
+com/chroma/pages/LoginTwoPage.class
+com/chroma/pages/DashboardPage.class
+com/chroma/pages/LoginPage.class
+com/chroma/stepDefinitions/Hooks.class
