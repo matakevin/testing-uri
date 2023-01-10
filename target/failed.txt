@@ -1,1 +1,1 @@
-file:src/test/java/com/chroma/features/Sample%20Test.feature:4
+file:src/test/java/com/chroma/features/Student%20Admission.feature:4

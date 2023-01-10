@@ -1,4 +1,4 @@
-com/chroma/runners/RunSmokeTest.class
+com/chroma/stepDefinitions/SampleTestStepDef.class
 com/chroma/pages/LoginTwoPage.class
 com/chroma/pages/DashboardPage.class
 com/chroma/pages/LoginPage.class
