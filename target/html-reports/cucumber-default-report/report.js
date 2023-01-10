@@ -51,6 +51,16 @@ formatter.step({
   "name": "navigates to Student Admission Submodule",
   "keyword": "And "
 });
+formatter.match({
+  "location": "StudentAdmissionStepDef.navigates_to_Student_Admission_Submodule()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.step({
+  "name": "user is directed to Student Admission page with the text \"Student Admission\"",
+  "keyword": "Then "
+});
 formatter.match({});
 formatter.result({
   "status": "undefined"

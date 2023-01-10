@@ -6,3 +6,4 @@ Feature: Student Admission Test Scenarios
     When user logs in with valid credentials username "general@teacher.com" and password "123456"
     And navigates to Student Information Module
     And navigates to Student Admission Submodule
+    Then user is directed to Student Admission page with the text "Student Admission"

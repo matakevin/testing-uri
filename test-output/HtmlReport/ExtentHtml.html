@@ -53,7 +53,7 @@
 		<!-- nav-right -->
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<a href='#!'>
-			<span class='label blue darken-3 suite-start-time'>Jan 9, 2023 08:32:28 PM</span>
+			<span class='label blue darken-3 suite-start-time'>Jan 9, 2023 08:40:37 PM</span>
 			</a>
 		</ul>
 	</div>
@@ -152,12 +152,12 @@
                     <canvas id='grandchild-analysis' width='90' height='70'></canvas>
                 </div>
                 <div class='block text-small'>
-                    <span class='tooltipped' data-position='top' data-tooltip='16.667%'><span class='strong'>1</span> step(s) passed</span>
+                    <span class='tooltipped' data-position='top' data-tooltip='14.286%'><span class='strong'>1</span> step(s) passed</span>
                 </div>
                 <div class='block text-small'>
                     <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> scenario(s) failed, 
-                    <span class='strong tooltipped' data-position='top' data-tooltip='83.333%'>5</span> skipped, 
-                    <span class='strong tooltipped' data-position='top' data-tooltip='83.333%'>0</span> others
+                    <span class='strong tooltipped' data-position='top' data-tooltip='85.714%'>6</span> skipped, 
+                    <span class='strong tooltipped' data-position='top' data-tooltip='85.714%'>0</span> others
                 </div>
             </div>
         </div>
@@ -178,7 +178,7 @@
 				<li class='test displayed active has-leaf skip' status='skip' bdd='true' test-id='1'>
 					<div class='test-heading'>
 						<span class='test-name'>Student Admission Test Scenarios</span>
-						<span class='test-time'>Jan 9, 2023 08:32:28 PM</span>
+						<span class='test-time'>Jan 9, 2023 08:40:37 PM</span>
 						<span class='test-status right skip'>skip</span>
 					</div>
 					<div class='test-content hide'>
@@ -192,7 +192,7 @@
 	<div class='category-list'>
 		<span class='category label'>@Progression</span>
 	</div>
-	<span class='duration right label'>0h 0m 0s+76ms</span>
+	<span class='duration right label'>0h 0m 0s+75ms</span>
 	<div class="bdd-test">
 		<div class="scenario-name"><span class='status skip' title='skip'><i class='material-icons'>redo</i></span> Scenario: Student Admission</div>
 	</div>
@@ -213,10 +213,14 @@
 			<div class="step-name" title="StudentAdmissionStepDef.navigates_to_Student_Information_Module()"><span class='status skip' title='skip'><i class='material-icons'>redo</i></span>And navigates to Student Information Module</div>
 			<div class="node-step">Step skipped</div>
 		</li>
-		<li test-id='7' class='node and pass' status='pass'>
-			<div class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And navigates to Student Admission Submodule</div>
+		<li test-id='7' class='node and skip' status='skip'>
+			<div class="step-name" title="StudentAdmissionStepDef.navigates_to_Student_Admission_Submodule()"><span class='status skip' title='skip'><i class='material-icons'>redo</i></span>And navigates to Student Admission Submodule</div>
+			<div class="node-step">Step skipped</div>
 		</li>
-		<li test-id='8' class='node * skip' status='skip'>
+		<li test-id='8' class='node then pass' status='pass'>
+			<div class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Then user is directed to Student Admission page with the text "Student Admission"</div>
+		</li>
+		<li test-id='9' class='node * skip' status='skip'>
 			<div class="step-name" title=""><span class='status skip' title='skip'><i class='material-icons'>redo</i></span>Hooks.end()</div>
 			<div class="node-step">Step skipped</div>
 		</li>
@@ -286,7 +290,7 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>Jan 9, 2023 08:32:28 PM</td>
+										<td>Jan 9, 2023 08:40:37 PM</td>
 										<td class='linked' test-id='2'>Student Admission</td>
 										<td><span class='test-status skip'>skip</span></td>
 									</tr>
@@ -324,25 +328,25 @@
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Steps
-					<div class='panel-lead'>6</div>
+					<div class='panel-lead'>7</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>Jan 9, 2023 08:32:28 PM</div>
+					<div class='panel-lead'>Jan 9, 2023 08:40:37 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>Jan 9, 2023 08:32:29 PM</div>
+			 		<div class='panel-lead'>Jan 9, 2023 08:40:37 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>0h 0m 0s+835ms</div>
+					<div class='panel-lead'>0h 0m 0s+743ms</div>
 				</div>
 			</div>
 			<div class='col s6'>
@@ -395,21 +399,21 @@
 				infoChild: 0,
 				debugChild: 0,
 				exceptionsChild: 1,
-				grandChildCount: 6,
+				grandChildCount: 7,
 				passGrandChild: 1,
 				failGrandChild: 0,
 				fatalGrandChild: 0,
 				errorGrandChild: 0,
 				warningGrandChild: 0,
-				skipGrandChild: 5,
+				skipGrandChild: 6,
 				infoGrandChild: 0,
 				debugGrandChild: 0,
-				exceptionsGrandChild: 5,
+				exceptionsGrandChild: 6,
 			};
 		</script>
 		<script>
 			var timeline = {
-			        "Student Admission Test Scenarios":0.076
+			        "Student Admission Test Scenarios":0.075
 			};
 		</script>
 	
