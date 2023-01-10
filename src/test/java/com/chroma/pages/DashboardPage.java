@@ -47,6 +47,10 @@ public class DashboardPage {
     @FindBy(xpath = "//span[contains(text(),'Reports')]")
     public WebElement reportsModule;
 
+    /* STUDENT ADMISSION SUBMODULE */
+    @FindBy(xpath = "//a[normalize-space()='Student Admission']")
+    public WebElement studentAdmissionSubmodule;
+
     /**
      * USE THIS METHOD TO DYNAMICALLY LOCATE A MODULE
      * 

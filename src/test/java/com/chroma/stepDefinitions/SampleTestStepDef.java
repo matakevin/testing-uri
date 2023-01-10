@@ -1,21 +1,11 @@
 package com.chroma.stepDefinitions;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
 import org.testng.Assert;
-import org.testng.asserts.SoftAssert;
-
 import com.chroma.pages.DashboardPage;
 import com.chroma.pages.LoginPage;
-import com.chroma.pages.LoginTwoPage;
 import com.chroma.utils.CucumberLogUtils;
 import com.chroma.web.CommonMethods;
 import com.chroma.web.WebDriverUtils;
-
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
@@ -29,6 +19,7 @@ public class SampleTestStepDef {
     public void a_user_is_on_the_login_page(String url) {
         WebDriverUtils.driver.get(url);
         CucumberLogUtils.logScreenShot();
+        CucumberLogUtils.logExtentScreenshot();
     }
 
     @When("user logs in with valid credentials username {string} and password {string}")
