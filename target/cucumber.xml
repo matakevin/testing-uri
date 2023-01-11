@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite failures="1" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="0.100276">
-    <testcase classname="Student Admission Test Scenarios" name="Student Admission" time="0.100276">
-        <failure message="The scenario has pending or undefined step(s)"><![CDATA[Given a user is on the login page "https://mexil.it/chroma_tech_academy/dev/site/login".skipped
-When user logs in with valid credentials username "general@teacher.com" and password "123456".skipped
-And navigates to Student Information Module.................................skipped
-And navigates to Student Admission Submodule................................skipped
-Then user is directed to Student Admission page with the text "Student Admission".undefined
-]]></failure>
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="29.805759">
+    <testcase classname="Student Admission Test Scenarios" name="Student Admission" time="29.805759">
+        <system-out><![CDATA[Given a user is on the login page "https://mexil.it/chroma_tech_academy/dev/site/login".passed
+When user logs in with valid credentials username "general@teacher.com" and password "123456".passed
+And navigates to Student Information Module.................................passed
+And navigates to Student Admission Submodule................................passed
+Then user is directed to Student Admission page with the text "Student Admission".passed
+And enters Student unique Admission Number "12345"..........................passed
+And selects Class "SDET" and Section "".....................................passed
+]]></system-out>
     </testcase>
 </testsuite>
