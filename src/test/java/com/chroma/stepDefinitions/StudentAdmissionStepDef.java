@@ -32,20 +32,27 @@ public class StudentAdmissionStepDef {
     }
 
     @Then("enters Student unique Admission Number {string}")
-    public void enters_Student_unique_Admission_Number(String admissionNumber) throws InterruptedException {
+    public void enters_Student_unique_Admission_Number(String admissionNumber) {
 
         studentAdmissionPage.studentAdmissionNumberTextBox.sendKeys(admissionNumber);
-        Thread.sleep(2000);
     }
 
     @Then("selects Class {string} and Section {string}")
-    public void selects_Class_and_Section(String className, String sectionName) throws InterruptedException {
+    public void selects_Class_and_Section(String className, String sectionName) {
 
-        Select select = new Select(studentAdmissionPage.classDropDown);
-        select.selectByVisibleText(className);
+        CommonMethods.selectDropDownValue(studentAdmissionPage.classDropDown, className);
+        CommonMethods.selectDropDownValue(studentAdmissionPage.sectionDropDown, sectionName);
+    }
 
-        Select selectTwo = new Select(studentAdmissionPage.sectionDropDown);
-        Thread.sleep(2000);
-        
+    @Then("enters Students first name {string} and last name {string}")
+    public void enters_Students_first_name_and_last_name(String firstName, String lastName) {
+
+        studentAdmissionPage.firstNameTextBox.sendKeys(firstName);
+        studentAdmissionPage.lastNameTextBox.sendKeys(lastName);
+    }
+
+    @Then("selects gender {string}")
+    public void selects_gender(String gender) {
+        CommonMethods.selectDropDownValue(studentAdmissionPage.genderDropDown, gender);
     }
 }

@@ -79,11 +79,31 @@ formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "selects Class \"SDET\" and Section \"\"",
+  "name": "selects Class \"SDET\" and Section \"Testing Fundamentals\"",
   "keyword": "And "
 });
 formatter.match({
   "location": "StudentAdmissionStepDef.selects_Class_and_Section(String,String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "enters Students first name \"Chroma\" and last name \"Tech\"",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "StudentAdmissionStepDef.enters_Students_first_name_and_last_name(String,String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "selects gender \"Female\"",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "StudentAdmissionStepDef.selects_gender(String)"
 });
 formatter.result({
   "status": "passed"
