@@ -23,7 +23,19 @@ public class StudentAdmissionPage {
     /* SECTION DROPDOWN */
     @FindBy(xpath = "//select[@id='section_id']")
     public WebElement sectionDropDown;
-    
+
+    /* FIRST NAME TEXT BOX */
+    @FindBy(xpath = "//input[@id='firstname']")
+    public WebElement firstNameTextBox;
+
+    /* LAST NAME TEXT BOX */
+    @FindBy(xpath = "//input[@id='lastname']")
+    public WebElement lastNameTextBox;
+
+    /* GENDER DROPDOWN */
+    @FindBy(xpath = "//select[@name='gender']")
+    public WebElement genderDropDown;
+
     public StudentAdmissionPage(){
         PageFactory.initElements(WebDriverUtils.driver, this);
     }

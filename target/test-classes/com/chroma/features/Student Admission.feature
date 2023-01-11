@@ -8,4 +8,6 @@ Feature: Student Admission Test Scenarios
     And navigates to Student Admission Submodule
     Then user is directed to Student Admission page with the text "Student Admission"
     And enters Student unique Admission Number "12345"
-    And selects Class "SDET" and Section ""  
+    And selects Class "SDET" and Section "Testing Fundamentals"  
+    And enters Students first name "Chroma" and last name "Tech"
+    And selects gender "Female"

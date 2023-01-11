@@ -35,13 +35,13 @@ public class CommonMethods {
     /**
      * USE THIS METHOD TO SELECT A VALUE FROM A DROPDOWN BY VALUE
      * 
-     * @param visibleText
+     * @param value
      * @param element
      */
-    public static void selectDropDownValue(String visibleText, WebElement element) {
+    public static void selectDropDownValue(String value, WebElement element) {
 
         Select select = new Select(element);
-        select.selectByValue(visibleText);
+        select.selectByValue(value);
     }
 
     /**
