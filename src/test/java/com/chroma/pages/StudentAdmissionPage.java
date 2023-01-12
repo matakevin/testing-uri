@@ -36,8 +36,19 @@ public class StudentAdmissionPage {
     @FindBy(xpath = "//select[@name='gender']")
     public WebElement genderDropDown;
 
+    /* DATE OF BIRTH CALENDAR */
+    @FindBy(xpath = "//input[@id='dob']")
+    public WebElement dateOfBirthCalendar;
+
+    /* MOTHERS NAME TEXT BOX */
+    @FindBy(xpath = "//input[@id='mother_name']")
+    public WebElement mothersNameTextBox;
+
+    /* MOTHER RADIO BUTTON */
+    @FindBy(xpath = "//label[normalize-space()='Mother']")
+    public WebElement motherRadioButton;
+
     public StudentAdmissionPage(){
         PageFactory.initElements(WebDriverUtils.driver, this);
     }
-    
 }

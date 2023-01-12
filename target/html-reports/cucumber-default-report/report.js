@@ -108,6 +108,36 @@ formatter.match({
 formatter.result({
   "status": "passed"
 });
+formatter.step({
+  "name": "enters Date of Birth \"04/01/1990\"",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "StudentAdmissionStepDef.enters_Date_of_Birth(String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "for Parent Guardian Details enters mothers name \"Chroma Mom\"",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "StudentAdmissionStepDef.for_Parent_Guardian_Details_enters_mothers_name(String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "for If Guardian Is field clicks on Mother radio button",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "StudentAdmissionStepDef.for_If_Guardian_Is_field_clicks_on_Mother_radio_button()"
+});
+formatter.result({
+  "status": "passed"
+});
 formatter.after({
   "status": "passed"
 });
