@@ -11,3 +11,6 @@ Feature: Student Admission Test Scenarios
     And selects Class "SDET" and Section "Testing Fundamentals"  
     And enters Students first name "Chroma" and last name "Tech"
     And selects gender "Female"
+    And enters Date of Birth "04/01/1990"
+    And for Parent Guardian Details enters mothers name "Chroma Mom"
+    And for If Guardian Is field clicks on Mother radio button
