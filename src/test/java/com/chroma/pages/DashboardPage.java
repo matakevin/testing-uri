@@ -51,6 +51,10 @@ public class DashboardPage {
     @FindBy(xpath = "//a[normalize-space()='Student Admission']")
     public WebElement studentAdmissionSubmodule;
 
+    /* BULK DELETE SUBMODULE */
+    @FindBy(xpath = "//a[contains(text(),'Bulk Delete')]")
+    public WebElement bulkDeleteSubModule;
+
     /**
      * USE THIS METHOD TO DYNAMICALLY LOCATE A MODULE
      * 

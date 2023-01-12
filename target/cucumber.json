@@ -3,11 +3,11 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2023-01-12T00:49:19.493Z",
+        "start_timestamp": "2023-01-12T01:38:41.299Z",
         "before": [
           {
             "result": {
-              "duration": 7251439541,
+              "duration": 6718980250,
               "status": "passed"
             },
             "match": {
@@ -22,7 +22,7 @@
         "after": [
           {
             "result": {
-              "duration": 122360250,
+              "duration": 120170375,
               "status": "passed"
             },
             "match": {
@@ -41,7 +41,7 @@
               }
             ],
             "result": {
-              "duration": 2228238917,
+              "duration": 2550122625,
               "status": "passed"
             },
             "line": 5,
@@ -59,7 +59,7 @@
           },
           {
             "result": {
-              "duration": 13205337584,
+              "duration": 13668716375,
               "status": "passed"
             },
             "line": 6,
@@ -81,7 +81,7 @@
           },
           {
             "result": {
-              "duration": 310072000,
+              "duration": 327314959,
               "status": "passed"
             },
             "line": 7,
@@ -93,159 +93,47 @@
           },
           {
             "result": {
-              "duration": 4199942916,
+              "duration": 1830575500,
               "status": "passed"
             },
-            "line": 8,
-            "name": "navigates to Student Admission Submodule",
+            "line": 20,
+            "name": "user navigates to Bulk Delete submodule",
             "match": {
-              "location": "StudentAdmissionStepDef.navigates_to_Student_Admission_Submodule()"
+              "location": "StudentAdmissionStepDef.user_navigates_to_Bulk_Delete_submodule()"
             },
-            "keyword": "And "
+            "keyword": "When "
           },
           {
             "result": {
-              "duration": 45093250,
+              "duration": 972409458,
               "status": "passed"
             },
-            "line": 9,
-            "name": "user is directed to Student Admission page with the text \"Student Admission\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Student Admission\"",
-                  "offset": 57
-                }
-              ],
-              "location": "StudentAdmissionStepDef.user_is_directed_to_Student_Admission_page_with_the_text(String)"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 57088375,
-              "status": "passed"
-            },
-            "line": 10,
-            "name": "enters Student unique Admission Number \"12345\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"12345\"",
-                  "offset": 39
-                }
-              ],
-              "location": "StudentAdmissionStepDef.enters_Student_unique_Admission_Number(String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 959880500,
-              "status": "passed"
-            },
-            "line": 11,
-            "name": "selects Class \"SDET\" and Section \"Testing Fundamentals\"",
+            "line": 21,
+            "name": "for Bulk Delete selects Class \"SDET\" and Section \"Testing Fundamentals\"",
             "match": {
               "arguments": [
                 {
                   "val": "\"SDET\"",
-                  "offset": 14
+                  "offset": 30
                 },
                 {
                   "val": "\"Testing Fundamentals\"",
-                  "offset": 33
+                  "offset": 49
                 }
               ],
-              "location": "StudentAdmissionStepDef.selects_Class_and_Section(String,String)"
+              "location": "StudentAdmissionStepDef.for_Bulk_Delete_selects_Class_and_Section(String,String)"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 593048292,
+              "duration": 5671424417,
               "status": "passed"
             },
-            "line": 12,
-            "name": "enters Students first name \"Chroma\" and last name \"Tech\"",
+            "line": 22,
+            "name": "clicks search button",
             "match": {
-              "arguments": [
-                {
-                  "val": "\"Chroma\"",
-                  "offset": 27
-                },
-                {
-                  "val": "\"Tech\"",
-                  "offset": 50
-                }
-              ],
-              "location": "StudentAdmissionStepDef.enters_Students_first_name_and_last_name(String,String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 229364917,
-              "status": "passed"
-            },
-            "line": 13,
-            "name": "selects gender \"Female\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Female\"",
-                  "offset": 15
-                }
-              ],
-              "location": "StudentAdmissionStepDef.selects_gender(String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 50835709,
-              "status": "passed"
-            },
-            "line": 14,
-            "name": "enters Date of Birth \"04/01/1990\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"04/01/1990\"",
-                  "offset": 21
-                }
-              ],
-              "location": "StudentAdmissionStepDef.enters_Date_of_Birth(String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 297624792,
-              "status": "passed"
-            },
-            "line": 15,
-            "name": "for Parent Guardian Details enters mothers name \"Chroma Mom\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Chroma Mom\"",
-                  "offset": 48
-                }
-              ],
-              "location": "StudentAdmissionStepDef.for_Parent_Guardian_Details_enters_mothers_name(String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 440888625,
-              "status": "passed"
-            },
-            "line": 16,
-            "name": "for If Guardian Is field clicks on Mother radio button",
-            "match": {
-              "location": "StudentAdmissionStepDef.for_If_Guardian_Is_field_clicks_on_Mother_radio_button()"
+              "location": "StudentAdmissionStepDef.clicks_search_button()"
             },
             "keyword": "And "
           }

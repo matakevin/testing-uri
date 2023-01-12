@@ -1,18 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="30.017662">
-    <testcase classname="Student Admission Test Scenarios" name="Student Admission" time="30.017662">
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="31.884504">
+    <testcase classname="Student Admission Test Scenarios" name="Student Admission" time="31.884504">
         <system-out><![CDATA[Given a user is on the login page "https://mexil.it/chroma_tech_academy/dev/site/login".passed
 When user logs in with valid credentials username "general@teacher.com" and password "123456".passed
 And navigates to Student Information Module.................................passed
-And navigates to Student Admission Submodule................................passed
-Then user is directed to Student Admission page with the text "Student Admission".passed
-And enters Student unique Admission Number "12345"..........................passed
-And selects Class "SDET" and Section "Testing Fundamentals".................passed
-And enters Students first name "Chroma" and last name "Tech"................passed
-And selects gender "Female".................................................passed
-And enters Date of Birth "04/01/1990".......................................passed
-And for Parent Guardian Details enters mothers name "Chroma Mom"............passed
-And for If Guardian Is field clicks on Mother radio button..................passed
+When user navigates to Bulk Delete submodule................................passed
+And for Bulk Delete selects Class "SDET" and Section "Testing Fundamentals".passed
+And clicks search button....................................................passed
 ]]></system-out>
     </testcase>
 </testsuite>
