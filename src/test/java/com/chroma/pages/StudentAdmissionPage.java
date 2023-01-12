@@ -48,6 +48,18 @@ public class StudentAdmissionPage {
     @FindBy(xpath = "//label[normalize-space()='Mother']")
     public WebElement motherRadioButton;
 
+    /* SAVE BUTTON */
+    @FindBy(xpath = "//button[@type='submit'][normalize-space()='Save']")
+    public WebElement saveButton;
+
+    /* GUARDIAN PHONE NUMBER TEXT BOX */
+    @FindBy(xpath = "//input[@id='guardian_phone']")
+    public WebElement guardianPhoneNumberTextBox;
+
+    /* SUCCESSFULLY SAVED MESSAGE */
+    @FindBy(xpath = "//div[normalize-space()='Record Saved Successfully']")
+    public WebElement successfullySavedMessage;
+
     public StudentAdmissionPage(){
         PageFactory.initElements(WebDriverUtils.driver, this);
     }

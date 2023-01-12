@@ -49,91 +49,31 @@ formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "navigates to Student Admission Submodule",
-  "keyword": "And "
+  "name": "user navigates to Bulk Delete submodule",
+  "keyword": "When "
 });
 formatter.match({
-  "location": "StudentAdmissionStepDef.navigates_to_Student_Admission_Submodule()"
+  "location": "StudentAdmissionStepDef.user_navigates_to_Bulk_Delete_submodule()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "user is directed to Student Admission page with the text \"Student Admission\"",
-  "keyword": "Then "
+  "name": "for Bulk Delete selects Class \"SDET\" and Section \"Testing Fundamentals\"",
+  "keyword": "And "
 });
 formatter.match({
-  "location": "StudentAdmissionStepDef.user_is_directed_to_Student_Admission_page_with_the_text(String)"
+  "location": "StudentAdmissionStepDef.for_Bulk_Delete_selects_Class_and_Section(String,String)"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "enters Student unique Admission Number \"12345\"",
+  "name": "clicks search button",
   "keyword": "And "
 });
 formatter.match({
-  "location": "StudentAdmissionStepDef.enters_Student_unique_Admission_Number(String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "selects Class \"SDET\" and Section \"Testing Fundamentals\"",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "StudentAdmissionStepDef.selects_Class_and_Section(String,String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "enters Students first name \"Chroma\" and last name \"Tech\"",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "StudentAdmissionStepDef.enters_Students_first_name_and_last_name(String,String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "selects gender \"Female\"",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "StudentAdmissionStepDef.selects_gender(String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "enters Date of Birth \"04/01/1990\"",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "StudentAdmissionStepDef.enters_Date_of_Birth(String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "for Parent Guardian Details enters mothers name \"Chroma Mom\"",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "StudentAdmissionStepDef.for_Parent_Guardian_Details_enters_mothers_name(String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "for If Guardian Is field clicks on Mother radio button",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "StudentAdmissionStepDef.for_If_Guardian_Is_field_clicks_on_Mother_radio_button()"
+  "location": "StudentAdmissionStepDef.clicks_search_button()"
 });
 formatter.result({
   "status": "passed"

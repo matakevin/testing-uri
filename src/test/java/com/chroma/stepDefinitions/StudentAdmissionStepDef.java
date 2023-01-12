@@ -3,6 +3,7 @@ package com.chroma.stepDefinitions;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.support.ui.Select;
 
+import com.chroma.pages.BulkDeletePage;
 import com.chroma.pages.DashboardPage;
 import com.chroma.pages.StudentAdmissionPage;
 import com.chroma.web.CommonMethods;
@@ -15,6 +16,7 @@ public class StudentAdmissionStepDef {
 
     DashboardPage dashboardPage = new DashboardPage();
     StudentAdmissionPage studentAdmissionPage = new StudentAdmissionPage();
+    BulkDeletePage bulkDeletePage = new BulkDeletePage();
 
     @When("navigates to Student Information Module")
     public void navigates_to_Student_Information_Module() {
@@ -74,5 +76,41 @@ public class StudentAdmissionStepDef {
     @Then("for If Guardian Is field clicks on Mother radio button")
     public void for_If_Guardian_Is_field_clicks_on_Mother_radio_button() {
         studentAdmissionPage.motherRadioButton.click();
+    }
+
+    @Then("enters Guardian Phone number {string}")
+    public void enters_Guardian_Phone_number(String phoneNumber) {
+
+        studentAdmissionPage.guardianPhoneNumberTextBox.sendKeys(phoneNumber);
+    }
+
+    @When("user clicks on save button")
+    public void user_clicks_on_save_button() {
+
+        studentAdmissionPage.saveButton.click();
+    }
+
+    @Then("student is succesfully saved and confirmation message displays {string}")
+    public void student_is_succesfully_saved_and_confirmation_message_displays(String expectedSuccessMessage) {
+
+        String actualSuccessMessage = studentAdmissionPage.successfullySavedMessage.getText();
+        CommonMethods.handledAssertEquals(actualSuccessMessage, expectedSuccessMessage);
+    }
+
+    @When("user navigates to Bulk Delete submodule")
+    public void user_navigates_to_Bulk_Delete_submodule() {
+        dashboardPage.bulkDeleteSubModule.click();
+    }
+
+    @When("for Bulk Delete selects Class {string} and Section {string}")
+    public void for_Bulk_Delete_selects_Class_and_Section(String className, String sectionName) {
+
+        CommonMethods.selectDropDownValue(bulkDeletePage.classNameDropDown, className);
+        CommonMethods.selectDropDownValue(bulkDeletePage.sectionNameDropDown, sectionName);
+    }
+
+    @When("clicks search button")
+    public void clicks_search_button() {
+        bulkDeletePage.searchButton.click();
     }
 }
