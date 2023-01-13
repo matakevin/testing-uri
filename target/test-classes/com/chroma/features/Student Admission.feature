@@ -20,3 +20,4 @@ Feature: Student Admission Test Scenarios
     When user navigates to Bulk Delete submodule
     And for Bulk Delete selects Class "SDET" and Section "Testing Fundamentals"
     And clicks search button
+    Then admitted student "Chroma Tech" is deleted for testing purposes

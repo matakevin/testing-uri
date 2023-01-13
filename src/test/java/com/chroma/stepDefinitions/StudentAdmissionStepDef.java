@@ -113,4 +113,11 @@ public class StudentAdmissionStepDef {
     public void clicks_search_button() {
         bulkDeletePage.searchButton.click();
     }
+
+    @Then("admitted student {string} is deleted for testing purposes")
+    public void admitted_student_is_deleted_for_testing_purposes(String studentRecord) throws InterruptedException {
+
+        BulkDeletePage.studentRecordLocator(studentRecord).click();
+        Thread.sleep(2000);
+    }
 }

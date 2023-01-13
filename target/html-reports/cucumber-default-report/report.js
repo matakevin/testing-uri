@@ -78,6 +78,16 @@ formatter.match({
 formatter.result({
   "status": "passed"
 });
+formatter.step({
+  "name": "admitted student \"Chroma Tech\" is deleted for testing purposes",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "StudentAdmissionStepDef.admitted_student_is_deleted_for_testing_purposes(String)"
+});
+formatter.result({
+  "status": "passed"
+});
 formatter.after({
   "status": "passed"
 });

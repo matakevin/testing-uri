@@ -1,5 +1,6 @@
 package com.chroma.pages;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -19,6 +20,13 @@ public class BulkDeletePage {
     /* SEARCH BUTTON */
     @FindBy(xpath = "//button[normalize-space()='Search']")
     public WebElement searchButton;
+
+    public static WebElement studentRecordLocator(String studentRecord) {
+
+       return WebDriverUtils.driver
+                .findElement(
+                        By.xpath("//a[contains(text(),'" + studentRecord + "')]//parent::td//parent::tr/td/input"));
+    }
 
     public BulkDeletePage() {
         PageFactory.initElements(WebDriverUtils.driver, this);
