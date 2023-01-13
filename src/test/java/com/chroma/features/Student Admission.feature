@@ -24,8 +24,8 @@ Feature: Student Admission Test Scenarios
 
     Examples: 
       | URL                                                   | USERNAME            | PASSWORD | ADMISSION NUMBER | CLASS          | SECTION                 | FIRST NAME | LAST NAME | GENDER | DOB        | MOTHERS NAME | GUARDIAN PHONE NUMBER |
-      | https://mexil.it/chroma_tech_academy/dev/site/login   | general@teacher.com |   123456 |            12345 | SDET           | Testing Fundamentals    | CHROMA     | TECH      | Female | 04/01/1990 | CHROMA MOM   |            7036875816 |
-      | https://mexil.it/chroma_tech_academy/dev/site/login   | general@teacher.com |   123456 |            12345 | Cyber Security | Networking Fundamentals | DIEGO      | TECH      | Male   | 03/10/1990 | BEST MOM     |            7036871234 |
-      | https://mexil.it/chroma_tech_academy/test/site/login  | general@teacher.com |   123456 |            12345 | Cyber Security | Networking Fundamentals | DIEGO      | TECH      | Male   | 03/10/1990 | BEST MOM     |            7036871234 |
-      | https://mexil.it/chroma_tech_academy/stage/site/login | general@teacher.com |   123456 |            12345 | Cyber Security | Networking Fundamentals | DIEGO      | TECH      | Male   | 03/10/1990 | BEST MOM     |            7036871234 |
-      | https://chroma.mexil.it/site/login                    | general@teacher.com |   123456 |            12345 | Cyber Security | Networking Fundamentals | DIEGO      | TECH      | Male   | 03/10/1990 | BEST MOM     |            7036871234 |
+      | https://mexil.it/chroma_tech_academy/dev/site/login   | general@teacher.com |   123456 |         65015887 | SDET           | Testing Fundamentals    | CHROMA     | TECH      | Female | 04/01/1990 | CHROMA MOM   |            7036875816 |
+      | https://mexil.it/chroma_tech_academy/dev/site/login   | general@teacher.com |   123456 |         65015887 | Cyber Security | Networking Fundamentals | DIEGO      | TECH      | Male   | 03/10/1990 | BEST MOM     |            7036871234 |
+      | https://mexil.it/chroma_tech_academy/test/site/login  | general@teacher.com |   123456 |         65015887 | Cyber Security | Networking Fundamentals | SHOMIR     | TECH      | Male   | 03/10/1990 | WORST MOM    |            7036871234 |
+      | https://mexil.it/chroma_tech_academy/stage/site/login | general@teacher.com |   123456 |         65015887 | Cyber Security | Networking Fundamentals | ANDRES     | TECH      | Male   | 03/10/1990 | GOOD MOM     |            7036871234 |
+      | https://chroma.mexil.it/site/login                    | general@teacher.com |   123456 |         65015887 | Cyber Security | Networking Fundamentals | LUIS       | TECH      | Male   | 03/10/1990 | BETTER MOM   |            7036871234 |

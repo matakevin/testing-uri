@@ -44,6 +44,7 @@
 		<ul id='slide-out' class='side-nav fixed hide-on-med-and-down'>
 			<li class='waves-effect active'><a href='#!' view='test-view' onclick="configureView(0);chartsView('test');"><i class='material-icons'>dashboard</i></a></li>
 						<li class='waves-effect'><a href='#!' view='category-view' onclick="configureView(1)"><i class='material-icons'>label_outline</i></a></li>
+			<li class='waves-effect'><a href='#!' view='exception-view' onclick="configureView(2)"><i class='material-icons'>bug_report</i></a></li>
 			<li class='waves-effect'><a href='#!' onclick="configureView(-1);chartsView('dashboard');" view='dashboard-view'><i class='material-icons'>track_changes</i></a></li>
 		</ul>
 		<!-- report name -->
@@ -53,7 +54,7 @@
 		<!-- nav-right -->
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<a href='#!'>
-			<span class='label blue darken-3 suite-start-time'>Jan 12, 2023 08:07:06 PM</span>
+			<span class='label blue darken-3 suite-start-time'>Jan 12, 2023 08:33:43 PM</span>
 			</a>
 		</ul>
 	</div>
@@ -69,6 +70,7 @@
 				</a>
 				<ul id='tests-toggle' class='dropdown-content'>
 										<li status='pass'><a href='#!'>Pass <i class='material-icons green-text'>check_circle</i></a></li>
+					<li status='fail'><a href='#!'>Fail <i class='material-icons red-text'>cancel</i></a></li>
 					<li status='skip'><a href='#!'>Skip <i class='material-icons cyan-text'>redo</i></a></li>
 					<li class='divider'></li>
 					<li status='clear' clear='true'><a href='#!'>Clear Filters <i class='material-icons'>clear</i></a></li>
@@ -125,7 +127,7 @@
                     <span class='tooltipped' data-position='top' data-tooltip='0%'><span class='strong'>0</span> feature(s) passed</span>
                 </div>
                 <div class='block text-small'>
-                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> feature(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='100%'>1</span> skipped
+                    <span class='strong tooltipped' data-position='top' data-tooltip='100%'>1</span> feature(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> skipped
                 </div>
             </div>
         </div>
@@ -136,12 +138,12 @@
                     <canvas id='child-analysis' width='90' height='70'></canvas>
                 </div>
                 <div class='block text-small'>
-                    <span class='tooltipped' data-position='top' data-tooltip='0%'><span class='strong'>0</span> scenario(s) passed</span>
+                    <span class='tooltipped' data-position='top' data-tooltip='60%'><span class='strong'>3</span> scenario(s) passed</span>
                 </div>
                 <div class='block text-small'>
-                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> scenario(s) failed, 
-                    <span class='strong tooltipped' data-position='top' data-tooltip='100%'>1</span> skipped, 
-                    <span class='strong tooltipped' data-position='top' data-tooltip='100%'>0</span> others
+                    <span class='strong tooltipped' data-position='top' data-tooltip='40%'>2</span> scenario(s) failed, 
+                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> skipped, 
+                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
                 </div>
             </div>
         </div>
@@ -152,12 +154,12 @@
                     <canvas id='grandchild-analysis' width='90' height='70'></canvas>
                 </div>
                 <div class='block text-small'>
-                    <span class='tooltipped' data-position='top' data-tooltip='4.545%'><span class='strong'>1</span> step(s) passed</span>
+                    <span class='tooltipped' data-position='top' data-tooltip='62.105%'><span class='strong'>59</span> step(s) passed</span>
                 </div>
                 <div class='block text-small'>
-                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> scenario(s) failed, 
-                    <span class='strong tooltipped' data-position='top' data-tooltip='95.455%'>21</span> skipped, 
-                    <span class='strong tooltipped' data-position='top' data-tooltip='95.455%'>0</span> others
+                    <span class='strong tooltipped' data-position='top' data-tooltip='2.105%'>2</span> scenario(s) failed, 
+                    <span class='strong tooltipped' data-position='top' data-tooltip='35.789%'>34</span> skipped, 
+                    <span class='strong tooltipped' data-position='top' data-tooltip='35.789%'>0</span> others
                 </div>
             </div>
         </div>
@@ -175,11 +177,11 @@
 </div>	<div class='subview-left left'>
 		<div class='view-summary'>
 			<ul id='test-collection' class='test-collection'>
-				<li class='test displayed active has-leaf skip' status='skip' bdd='true' test-id='1'>
+				<li class='test displayed active has-leaf fail' status='fail' bdd='true' test-id='1'>
 					<div class='test-heading'>
 						<span class='test-name'>Student Admission Test Scenarios</span>
-						<span class='test-time'>Jan 12, 2023 08:07:07 PM</span>
-						<span class='test-status right skip'>skip</span>
+						<span class='test-time'>Jan 12, 2023 08:33:50 PM</span>
+						<span class='test-status right fail'>fail</span>
 					</div>
 					<div class='test-content hide'>
 <div class="sr-filters bdd-filters">
@@ -188,30 +190,59 @@
 	<a class="btn-floating waves-effect waves-light skip blue" title="skip"><i class='material-icons'>redo</i></a>
 	<a class="btn-floating waves-effect waves-light clear grey" title="clear"><i class='material-icons'>clear</i></a>
 </div>
-<div class='scenario outline node' test-id='2' status='skip'>
+<div class='scenario outline node' test-id='2' status='fail'>
 	<div class='category-list'>
 		<span class='category label'>@Progression</span>
 	</div>
-	<span class='duration right label'>0h 0m 0s+75ms</span>
+	<span class='duration right label'>0h 2m 48s+539ms</span>
 	<div class="bdd-test">
-		<div class="scenario-name"><span class='status skip' title='skip'><i class='material-icons'>redo</i></span> Scenario Outline: Student Admission</div>
-		<table class='runtime-table table-striped table'><tr><td>URL</td><td>USERNAME</td><td>PASSWORD</td><td>ADMISSION NUMBER</td><td>CLASS</td><td>SECTION</td><td>FIRST NAME</td><td>LAST NAME</td><td>GENDER</td><td>DOB</td><td>MOTHERS NAME</td><td>GUARDIAN PHONE NUMBER</td></tr><tr><td>https://mexil.it/chroma_tech_academy/dev/site/login</td><td>general@teacher.com</td><td>123456</td><td>12345</td><td>SDET</td><td>Testing Fundamentals</td><td>CHROMA</td><td>TECH</td><td>Female</td><td>04/01/1990</td><td>CHROMA MOM</td><td>7036875816</td></tr></table>
+		<div class="scenario-name"><span class='status fail' title='fail'><i class='material-icons'>cancel</i></span> Scenario Outline: Student Admission</div>
+		<table class='runtime-table table-striped table'><tr><td>URL</td><td>USERNAME</td><td>PASSWORD</td><td>ADMISSION NUMBER</td><td>CLASS</td><td>SECTION</td><td>FIRST NAME</td><td>LAST NAME</td><td>GENDER</td><td>DOB</td><td>MOTHERS NAME</td><td>GUARDIAN PHONE NUMBER</td></tr><tr><td>https://mexil.it/chroma_tech_academy/dev/site/login</td><td>general@teacher.com</td><td>123456</td><td>65015887</td><td>SDET</td><td>Testing Fundamentals</td><td>CHROMA</td><td>TECH</td><td>Female</td><td>04/01/1990</td><td>CHROMA MOM</td><td>7036875816</td></tr><tr><td>https://mexil.it/chroma_tech_academy/dev/site/login</td><td>general@teacher.com</td><td>123456</td><td>65015887</td><td>Cyber Security</td><td>Networking Fundamentals</td><td>DIEGO</td><td>TECH</td><td>Male</td><td>03/10/1990</td><td>BEST MOM</td><td>7036871234</td></tr><tr><td>https://mexil.it/chroma_tech_academy/test/site/login</td><td>general@teacher.com</td><td>123456</td><td>65015887</td><td>Cyber Security</td><td>Networking Fundamentals</td><td>SHOMIR</td><td>TECH</td><td>Male</td><td>03/10/1990</td><td>WORST MOM</td><td>7036871234</td></tr><tr><td>https://mexil.it/chroma_tech_academy/stage/site/login</td><td>general@teacher.com</td><td>123456</td><td>65015887</td><td>Cyber Security</td><td>Networking Fundamentals</td><td>ANDRES</td><td>TECH</td><td>Male</td><td>03/10/1990</td><td>GOOD MOM</td><td>7036871234</td></tr><tr><td>https://chroma.mexil.it/site/login</td><td>general@teacher.com</td><td>123456</td><td>65015887</td><td>Cyber Security</td><td>Networking Fundamentals</td><td>LUIS</td><td>TECH</td><td>Male</td><td>03/10/1990</td><td>BETTER MOM</td><td>7036871234</td></tr></table>
 	</div>
 	<ul class='steps'>
-		<li test-id='3' class='node scenario skip' status='skip'>
-			<div class="step-name" title=""><span class='status skip' title='skip'><i class='material-icons'>redo</i></span>Student Admission</div>
+		<li test-id='3' class='node scenario fail' status='fail'>
+			<div class="step-name" title=""><span class='status fail' title='fail'><i class='material-icons'>cancel</i></span>Student Admission</div>
 			<ul class='gc steps'>
-				<li test-id='4' class='gc * skip' status='skip'>
-					<h6 class="step-name" title=""><span class='status skip' title='skip'><i class='material-icons'>redo</i></span>Hooks.start(Scenario)</h6>
-					<div class="node-step">Step skipped</div>
+				<li test-id='5' class='gc given pass' status='pass'>
+					<h6 class="step-name" title="SampleTestStepDef.a_user_is_on_the_login_page(String)"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Given a user is on the login page "https://mexil.it/chroma_tech_academy/dev/site/login"</h6>
+					<ul class='screenshots right'>
+						<li><a data-featherlight="image" href="/Users/diegojuarez/Desktop/defenders-test-automation/test-output/screenshots/image_12012023_203352.png"><i class='material-icons'>panorama</i></a></li>
+					</ul>
+					<div class="node-step"></div>
 				</li>
-				<li test-id='5' class='gc given skip' status='skip'>
-					<h6 class="step-name" title="SampleTestStepDef.a_user_is_on_the_login_page(String)"><span class='status skip' title='skip'><i class='material-icons'>redo</i></span>Given a user is on the login page "https://mexil.it/chroma_tech_academy/dev/site/login"</h6>
-					<div class="node-step">Step skipped</div>
-				</li>
-				<li test-id='6' class='gc when skip' status='skip'>
-					<h6 class="step-name" title="SampleTestStepDef.user_logs_in_with_valid_credentials_username_and_password(String,String)"><span class='status skip' title='skip'><i class='material-icons'>redo</i></span>When user logs in with valid credentials username "general@teacher.com" and password "123456"</h6>
-					<div class="node-step">Step skipped</div>
+				<li test-id='6' class='gc when fail' status='fail'>
+					<h6 class="step-name" title="SampleTestStepDef.user_logs_in_with_valid_credentials_username_and_password(String,String)"><span class='status fail' title='fail'><i class='material-icons'>cancel</i></span>When user logs in with valid credentials username "general@teacher.com" and password "123456"</h6>
+					<textarea disabled class="code-block">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//input[@id='form-username']"}
+  (Session info: chrome=109.0.5414.87)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.7.2', revision: '4d4020c3b7'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '15.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [dd3ff444e4de90eecea34a9b613e7bfc, findElement {using=xpath, value=//input[@id='form-username']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.87, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: /var/folders/ph/bzj7vj0x6js...}, goog:chromeOptions: {debuggerAddress: localhost:51123}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:51123/devtoo..., se:cdpVersion: 109.0.5414.87, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: dd3ff444e4de90eecea34a9b613e7bfc
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:535)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:351)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:343)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at com.sun.proxy.$Proxy20.sendKeys(Unknown Source)
+	at com.chroma.stepDefinitions.SampleTestStepDef.user_logs_in_with_valid_credentials_username_and_password(SampleTestStepDef.java:27)
+	at ✽.user logs in with valid credentials username "general@teacher.com" and password "123456"(file:src/test/java/com/chroma/features/Student%20Admission.feature:6)
+</textarea>
 				</li>
 				<li test-id='7' class='gc and skip' status='skip'>
 					<h6 class="step-name" title="StudentAdmissionStepDef.navigates_to_Student_Information_Module()"><span class='status skip' title='skip'><i class='material-icons'>redo</i></span>And navigates to Student Information Module</h6>
@@ -226,7 +257,7 @@
 					<div class="node-step">Step skipped</div>
 				</li>
 				<li test-id='10' class='gc and skip' status='skip'>
-					<h6 class="step-name" title="StudentAdmissionStepDef.enters_Student_unique_Admission_Number(String)"><span class='status skip' title='skip'><i class='material-icons'>redo</i></span>And enters Student unique Admission Number "12345"</h6>
+					<h6 class="step-name" title="StudentAdmissionStepDef.enters_Student_unique_Admission_Number(String)"><span class='status skip' title='skip'><i class='material-icons'>redo</i></span>And enters Student unique Admission Number "65015887"</h6>
 					<div class="node-step">Step skipped</div>
 				</li>
 				<li test-id='11' class='gc and skip' status='skip'>
@@ -278,15 +309,374 @@
 					<div class="node-step">Step skipped</div>
 				</li>
 				<li test-id='23' class='gc then skip' status='skip'>
-					<h6 class="step-name" title="StudentAdmissionStepDef.admitted_student_is_deleted_for_testing_purposes(String)"><span class='status skip' title='skip'><i class='material-icons'>redo</i></span>Then admitted student "Chroma Tech" is deleted for testing purposes</h6>
+					<h6 class="step-name" title="StudentAdmissionStepDef.admitted_student_with_first_name_and_last_name_is_deleted_for_testing_purposes(String,String)"><span class='status skip' title='skip'><i class='material-icons'>redo</i></span>Then admitted student with first name "CHROMA" and last name "TECH" is deleted for testing purposes</h6>
 					<div class="node-step">Step skipped</div>
 				</li>
-				<li test-id='24' class='gc then pass' status='pass'>
-					<h6 class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Then admitted student with first name "CHROMA" and last name "TECH" is deleted for testing purposes</h6>
+			</ul>
+		</li>
+		<li test-id='25' class='node scenario fail' status='fail'>
+			<div class="step-name" title=""><span class='status fail' title='fail'><i class='material-icons'>cancel</i></span>Student Admission</div>
+			<ul class='gc steps'>
+				<li test-id='27' class='gc given pass' status='pass'>
+					<h6 class="step-name" title="SampleTestStepDef.a_user_is_on_the_login_page(String)"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Given a user is on the login page "https://mexil.it/chroma_tech_academy/dev/site/login"</h6>
+					<ul class='screenshots right'>
+						<li><a data-featherlight="image" href="/Users/diegojuarez/Desktop/defenders-test-automation/test-output/screenshots/image_12012023_203419.png"><i class='material-icons'>panorama</i></a></li>
+					</ul>
+					<div class="node-step"></div>
 				</li>
-				<li test-id='25' class='gc * skip' status='skip'>
-					<h6 class="step-name" title=""><span class='status skip' title='skip'><i class='material-icons'>redo</i></span>Hooks.end()</h6>
+				<li test-id='28' class='gc when fail' status='fail'>
+					<h6 class="step-name" title="SampleTestStepDef.user_logs_in_with_valid_credentials_username_and_password(String,String)"><span class='status fail' title='fail'><i class='material-icons'>cancel</i></span>When user logs in with valid credentials username "general@teacher.com" and password "123456"</h6>
+					<textarea disabled class="code-block">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//input[@id='form-username']"}
+  (Session info: chrome=109.0.5414.87)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.7.2', revision: '4d4020c3b7'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '15.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [a24e0900c635c64d6572da99b23d4aee, findElement {using=xpath, value=//input[@id='form-username']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.87, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: /var/folders/ph/bzj7vj0x6js...}, goog:chromeOptions: {debuggerAddress: localhost:51251}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:51251/devtoo..., se:cdpVersion: 109.0.5414.87, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: a24e0900c635c64d6572da99b23d4aee
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:535)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:351)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:343)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at com.sun.proxy.$Proxy20.sendKeys(Unknown Source)
+	at com.chroma.stepDefinitions.SampleTestStepDef.user_logs_in_with_valid_credentials_username_and_password(SampleTestStepDef.java:27)
+	at ✽.user logs in with valid credentials username "general@teacher.com" and password "123456"(file:src/test/java/com/chroma/features/Student%20Admission.feature:6)
+</textarea>
+				</li>
+				<li test-id='29' class='gc and skip' status='skip'>
+					<h6 class="step-name" title="StudentAdmissionStepDef.navigates_to_Student_Information_Module()"><span class='status skip' title='skip'><i class='material-icons'>redo</i></span>And navigates to Student Information Module</h6>
 					<div class="node-step">Step skipped</div>
+				</li>
+				<li test-id='30' class='gc and skip' status='skip'>
+					<h6 class="step-name" title="StudentAdmissionStepDef.navigates_to_Student_Admission_Submodule()"><span class='status skip' title='skip'><i class='material-icons'>redo</i></span>And navigates to Student Admission Submodule</h6>
+					<div class="node-step">Step skipped</div>
+				</li>
+				<li test-id='31' class='gc then skip' status='skip'>
+					<h6 class="step-name" title="StudentAdmissionStepDef.user_is_directed_to_Student_Admission_page_with_the_text(String)"><span class='status skip' title='skip'><i class='material-icons'>redo</i></span>Then user is directed to Student Admission page with the text "Student Admission"</h6>
+					<div class="node-step">Step skipped</div>
+				</li>
+				<li test-id='32' class='gc and skip' status='skip'>
+					<h6 class="step-name" title="StudentAdmissionStepDef.enters_Student_unique_Admission_Number(String)"><span class='status skip' title='skip'><i class='material-icons'>redo</i></span>And enters Student unique Admission Number "65015887"</h6>
+					<div class="node-step">Step skipped</div>
+				</li>
+				<li test-id='33' class='gc and skip' status='skip'>
+					<h6 class="step-name" title="StudentAdmissionStepDef.selects_Class_and_Section(String,String)"><span class='status skip' title='skip'><i class='material-icons'>redo</i></span>And selects Class "Cyber Security" and Section "Networking Fundamentals"</h6>
+					<div class="node-step">Step skipped</div>
+				</li>
+				<li test-id='34' class='gc and skip' status='skip'>
+					<h6 class="step-name" title="StudentAdmissionStepDef.enters_Students_first_name_and_last_name(String,String)"><span class='status skip' title='skip'><i class='material-icons'>redo</i></span>And enters Students first name "DIEGO" and last name "TECH"</h6>
+					<div class="node-step">Step skipped</div>
+				</li>
+				<li test-id='35' class='gc and skip' status='skip'>
+					<h6 class="step-name" title="StudentAdmissionStepDef.selects_gender(String)"><span class='status skip' title='skip'><i class='material-icons'>redo</i></span>And selects gender "Male"</h6>
+					<div class="node-step">Step skipped</div>
+				</li>
+				<li test-id='36' class='gc and skip' status='skip'>
+					<h6 class="step-name" title="StudentAdmissionStepDef.enters_Date_of_Birth(String)"><span class='status skip' title='skip'><i class='material-icons'>redo</i></span>And enters Date of Birth "03/10/1990"</h6>
+					<div class="node-step">Step skipped</div>
+				</li>
+				<li test-id='37' class='gc and skip' status='skip'>
+					<h6 class="step-name" title="StudentAdmissionStepDef.for_Parent_Guardian_Details_enters_mothers_name(String)"><span class='status skip' title='skip'><i class='material-icons'>redo</i></span>And for Parent Guardian Details enters mothers name "BEST MOM"</h6>
+					<div class="node-step">Step skipped</div>
+				</li>
+				<li test-id='38' class='gc and skip' status='skip'>
+					<h6 class="step-name" title="StudentAdmissionStepDef.for_If_Guardian_Is_field_clicks_on_Mother_radio_button()"><span class='status skip' title='skip'><i class='material-icons'>redo</i></span>And for If Guardian Is field clicks on Mother radio button</h6>
+					<div class="node-step">Step skipped</div>
+				</li>
+				<li test-id='39' class='gc and skip' status='skip'>
+					<h6 class="step-name" title="StudentAdmissionStepDef.enters_Guardian_Phone_number(String)"><span class='status skip' title='skip'><i class='material-icons'>redo</i></span>And enters Guardian Phone number "7036871234"</h6>
+					<div class="node-step">Step skipped</div>
+				</li>
+				<li test-id='40' class='gc when skip' status='skip'>
+					<h6 class="step-name" title="StudentAdmissionStepDef.user_clicks_on_save_button()"><span class='status skip' title='skip'><i class='material-icons'>redo</i></span>When user clicks on save button</h6>
+					<div class="node-step">Step skipped</div>
+				</li>
+				<li test-id='41' class='gc then skip' status='skip'>
+					<h6 class="step-name" title="StudentAdmissionStepDef.student_is_succesfully_saved_and_confirmation_message_displays(String)"><span class='status skip' title='skip'><i class='material-icons'>redo</i></span>Then student is succesfully saved and confirmation message displays "Record Saved Successfully"</h6>
+					<div class="node-step">Step skipped</div>
+				</li>
+				<li test-id='42' class='gc when skip' status='skip'>
+					<h6 class="step-name" title="StudentAdmissionStepDef.user_navigates_to_Bulk_Delete_submodule()"><span class='status skip' title='skip'><i class='material-icons'>redo</i></span>When user navigates to Bulk Delete submodule</h6>
+					<div class="node-step">Step skipped</div>
+				</li>
+				<li test-id='43' class='gc and skip' status='skip'>
+					<h6 class="step-name" title="StudentAdmissionStepDef.for_Bulk_Delete_selects_Class_and_Section(String,String)"><span class='status skip' title='skip'><i class='material-icons'>redo</i></span>And for Bulk Delete selects Class "Cyber Security" and Section "Networking Fundamentals"</h6>
+					<div class="node-step">Step skipped</div>
+				</li>
+				<li test-id='44' class='gc and skip' status='skip'>
+					<h6 class="step-name" title="StudentAdmissionStepDef.clicks_search_button()"><span class='status skip' title='skip'><i class='material-icons'>redo</i></span>And clicks search button</h6>
+					<div class="node-step">Step skipped</div>
+				</li>
+				<li test-id='45' class='gc then skip' status='skip'>
+					<h6 class="step-name" title="StudentAdmissionStepDef.admitted_student_with_first_name_and_last_name_is_deleted_for_testing_purposes(String,String)"><span class='status skip' title='skip'><i class='material-icons'>redo</i></span>Then admitted student with first name "DIEGO" and last name "TECH" is deleted for testing purposes</h6>
+					<div class="node-step">Step skipped</div>
+				</li>
+			</ul>
+		</li>
+		<li test-id='47' class='node scenario pass' status='pass'>
+			<div class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Student Admission</div>
+			<ul class='gc steps'>
+				<li test-id='49' class='gc given pass' status='pass'>
+					<h6 class="step-name" title="SampleTestStepDef.a_user_is_on_the_login_page(String)"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Given a user is on the login page "https://mexil.it/chroma_tech_academy/test/site/login"</h6>
+					<ul class='screenshots right'>
+						<li><a data-featherlight="image" href="/Users/diegojuarez/Desktop/defenders-test-automation/test-output/screenshots/image_12012023_203446.png"><i class='material-icons'>panorama</i></a></li>
+					</ul>
+					<div class="node-step"></div>
+				</li>
+				<li test-id='50' class='gc when pass' status='pass'>
+					<h6 class="step-name" title="SampleTestStepDef.user_logs_in_with_valid_credentials_username_and_password(String,String)"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>When user logs in with valid credentials username "general@teacher.com" and password "123456"</h6>
+					<div class="node-step"></div>
+				</li>
+				<li test-id='51' class='gc and pass' status='pass'>
+					<h6 class="step-name" title="StudentAdmissionStepDef.navigates_to_Student_Information_Module()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And navigates to Student Information Module</h6>
+					<div class="node-step"></div>
+				</li>
+				<li test-id='52' class='gc and pass' status='pass'>
+					<h6 class="step-name" title="StudentAdmissionStepDef.navigates_to_Student_Admission_Submodule()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And navigates to Student Admission Submodule</h6>
+					<div class="node-step"></div>
+				</li>
+				<li test-id='53' class='gc then pass' status='pass'>
+					<h6 class="step-name" title="StudentAdmissionStepDef.user_is_directed_to_Student_Admission_page_with_the_text(String)"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Then user is directed to Student Admission page with the text "Student Admission"</h6>
+					<div class="node-step"></div>
+				</li>
+				<li test-id='54' class='gc and pass' status='pass'>
+					<h6 class="step-name" title="StudentAdmissionStepDef.enters_Student_unique_Admission_Number(String)"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And enters Student unique Admission Number "65015887"</h6>
+					<div class="node-step"></div>
+				</li>
+				<li test-id='55' class='gc and pass' status='pass'>
+					<h6 class="step-name" title="StudentAdmissionStepDef.selects_Class_and_Section(String,String)"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And selects Class "Cyber Security" and Section "Networking Fundamentals"</h6>
+					<div class="node-step"></div>
+				</li>
+				<li test-id='56' class='gc and pass' status='pass'>
+					<h6 class="step-name" title="StudentAdmissionStepDef.enters_Students_first_name_and_last_name(String,String)"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And enters Students first name "SHOMIR" and last name "TECH"</h6>
+					<div class="node-step"></div>
+				</li>
+				<li test-id='57' class='gc and pass' status='pass'>
+					<h6 class="step-name" title="StudentAdmissionStepDef.selects_gender(String)"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And selects gender "Male"</h6>
+					<div class="node-step"></div>
+				</li>
+				<li test-id='58' class='gc and pass' status='pass'>
+					<h6 class="step-name" title="StudentAdmissionStepDef.enters_Date_of_Birth(String)"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And enters Date of Birth "03/10/1990"</h6>
+					<div class="node-step"></div>
+				</li>
+				<li test-id='59' class='gc and pass' status='pass'>
+					<h6 class="step-name" title="StudentAdmissionStepDef.for_Parent_Guardian_Details_enters_mothers_name(String)"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And for Parent Guardian Details enters mothers name "WORST MOM"</h6>
+					<div class="node-step"></div>
+				</li>
+				<li test-id='60' class='gc and pass' status='pass'>
+					<h6 class="step-name" title="StudentAdmissionStepDef.for_If_Guardian_Is_field_clicks_on_Mother_radio_button()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And for If Guardian Is field clicks on Mother radio button</h6>
+					<div class="node-step"></div>
+				</li>
+				<li test-id='61' class='gc and pass' status='pass'>
+					<h6 class="step-name" title="StudentAdmissionStepDef.enters_Guardian_Phone_number(String)"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And enters Guardian Phone number "7036871234"</h6>
+					<div class="node-step"></div>
+				</li>
+				<li test-id='62' class='gc when pass' status='pass'>
+					<h6 class="step-name" title="StudentAdmissionStepDef.user_clicks_on_save_button()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>When user clicks on save button</h6>
+					<div class="node-step"></div>
+				</li>
+				<li test-id='63' class='gc then pass' status='pass'>
+					<h6 class="step-name" title="StudentAdmissionStepDef.student_is_succesfully_saved_and_confirmation_message_displays(String)"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Then student is succesfully saved and confirmation message displays "Record Saved Successfully"</h6>
+					<div class="node-step"></div>
+				</li>
+				<li test-id='64' class='gc when pass' status='pass'>
+					<h6 class="step-name" title="StudentAdmissionStepDef.user_navigates_to_Bulk_Delete_submodule()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>When user navigates to Bulk Delete submodule</h6>
+					<div class="node-step"></div>
+				</li>
+				<li test-id='65' class='gc and pass' status='pass'>
+					<h6 class="step-name" title="StudentAdmissionStepDef.for_Bulk_Delete_selects_Class_and_Section(String,String)"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And for Bulk Delete selects Class "Cyber Security" and Section "Networking Fundamentals"</h6>
+					<div class="node-step"></div>
+				</li>
+				<li test-id='66' class='gc and pass' status='pass'>
+					<h6 class="step-name" title="StudentAdmissionStepDef.clicks_search_button()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And clicks search button</h6>
+					<div class="node-step"></div>
+				</li>
+				<li test-id='67' class='gc then pass' status='pass'>
+					<h6 class="step-name" title="StudentAdmissionStepDef.admitted_student_with_first_name_and_last_name_is_deleted_for_testing_purposes(String,String)"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Then admitted student with first name "SHOMIR" and last name "TECH" is deleted for testing purposes</h6>
+					<div class="node-step"></div>
+				</li>
+			</ul>
+		</li>
+		<li test-id='69' class='node scenario pass' status='pass'>
+			<div class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Student Admission</div>
+			<ul class='gc steps'>
+				<li test-id='71' class='gc given pass' status='pass'>
+					<h6 class="step-name" title="SampleTestStepDef.a_user_is_on_the_login_page(String)"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Given a user is on the login page "https://mexil.it/chroma_tech_academy/stage/site/login"</h6>
+					<ul class='screenshots right'>
+						<li><a data-featherlight="image" href="/Users/diegojuarez/Desktop/defenders-test-automation/test-output/screenshots/image_12012023_203526.png"><i class='material-icons'>panorama</i></a></li>
+					</ul>
+					<div class="node-step"></div>
+				</li>
+				<li test-id='72' class='gc when pass' status='pass'>
+					<h6 class="step-name" title="SampleTestStepDef.user_logs_in_with_valid_credentials_username_and_password(String,String)"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>When user logs in with valid credentials username "general@teacher.com" and password "123456"</h6>
+					<div class="node-step"></div>
+				</li>
+				<li test-id='73' class='gc and pass' status='pass'>
+					<h6 class="step-name" title="StudentAdmissionStepDef.navigates_to_Student_Information_Module()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And navigates to Student Information Module</h6>
+					<div class="node-step"></div>
+				</li>
+				<li test-id='74' class='gc and pass' status='pass'>
+					<h6 class="step-name" title="StudentAdmissionStepDef.navigates_to_Student_Admission_Submodule()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And navigates to Student Admission Submodule</h6>
+					<div class="node-step"></div>
+				</li>
+				<li test-id='75' class='gc then pass' status='pass'>
+					<h6 class="step-name" title="StudentAdmissionStepDef.user_is_directed_to_Student_Admission_page_with_the_text(String)"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Then user is directed to Student Admission page with the text "Student Admission"</h6>
+					<div class="node-step"></div>
+				</li>
+				<li test-id='76' class='gc and pass' status='pass'>
+					<h6 class="step-name" title="StudentAdmissionStepDef.enters_Student_unique_Admission_Number(String)"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And enters Student unique Admission Number "65015887"</h6>
+					<div class="node-step"></div>
+				</li>
+				<li test-id='77' class='gc and pass' status='pass'>
+					<h6 class="step-name" title="StudentAdmissionStepDef.selects_Class_and_Section(String,String)"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And selects Class "Cyber Security" and Section "Networking Fundamentals"</h6>
+					<div class="node-step"></div>
+				</li>
+				<li test-id='78' class='gc and pass' status='pass'>
+					<h6 class="step-name" title="StudentAdmissionStepDef.enters_Students_first_name_and_last_name(String,String)"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And enters Students first name "ANDRES" and last name "TECH"</h6>
+					<div class="node-step"></div>
+				</li>
+				<li test-id='79' class='gc and pass' status='pass'>
+					<h6 class="step-name" title="StudentAdmissionStepDef.selects_gender(String)"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And selects gender "Male"</h6>
+					<div class="node-step"></div>
+				</li>
+				<li test-id='80' class='gc and pass' status='pass'>
+					<h6 class="step-name" title="StudentAdmissionStepDef.enters_Date_of_Birth(String)"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And enters Date of Birth "03/10/1990"</h6>
+					<div class="node-step"></div>
+				</li>
+				<li test-id='81' class='gc and pass' status='pass'>
+					<h6 class="step-name" title="StudentAdmissionStepDef.for_Parent_Guardian_Details_enters_mothers_name(String)"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And for Parent Guardian Details enters mothers name "GOOD MOM"</h6>
+					<div class="node-step"></div>
+				</li>
+				<li test-id='82' class='gc and pass' status='pass'>
+					<h6 class="step-name" title="StudentAdmissionStepDef.for_If_Guardian_Is_field_clicks_on_Mother_radio_button()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And for If Guardian Is field clicks on Mother radio button</h6>
+					<div class="node-step"></div>
+				</li>
+				<li test-id='83' class='gc and pass' status='pass'>
+					<h6 class="step-name" title="StudentAdmissionStepDef.enters_Guardian_Phone_number(String)"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And enters Guardian Phone number "7036871234"</h6>
+					<div class="node-step"></div>
+				</li>
+				<li test-id='84' class='gc when pass' status='pass'>
+					<h6 class="step-name" title="StudentAdmissionStepDef.user_clicks_on_save_button()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>When user clicks on save button</h6>
+					<div class="node-step"></div>
+				</li>
+				<li test-id='85' class='gc then pass' status='pass'>
+					<h6 class="step-name" title="StudentAdmissionStepDef.student_is_succesfully_saved_and_confirmation_message_displays(String)"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Then student is succesfully saved and confirmation message displays "Record Saved Successfully"</h6>
+					<div class="node-step"></div>
+				</li>
+				<li test-id='86' class='gc when pass' status='pass'>
+					<h6 class="step-name" title="StudentAdmissionStepDef.user_navigates_to_Bulk_Delete_submodule()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>When user navigates to Bulk Delete submodule</h6>
+					<div class="node-step"></div>
+				</li>
+				<li test-id='87' class='gc and pass' status='pass'>
+					<h6 class="step-name" title="StudentAdmissionStepDef.for_Bulk_Delete_selects_Class_and_Section(String,String)"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And for Bulk Delete selects Class "Cyber Security" and Section "Networking Fundamentals"</h6>
+					<div class="node-step"></div>
+				</li>
+				<li test-id='88' class='gc and pass' status='pass'>
+					<h6 class="step-name" title="StudentAdmissionStepDef.clicks_search_button()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And clicks search button</h6>
+					<div class="node-step"></div>
+				</li>
+				<li test-id='89' class='gc then pass' status='pass'>
+					<h6 class="step-name" title="StudentAdmissionStepDef.admitted_student_with_first_name_and_last_name_is_deleted_for_testing_purposes(String,String)"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Then admitted student with first name "ANDRES" and last name "TECH" is deleted for testing purposes</h6>
+					<div class="node-step"></div>
+				</li>
+			</ul>
+		</li>
+		<li test-id='91' class='node scenario pass' status='pass'>
+			<div class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Student Admission</div>
+			<ul class='gc steps'>
+				<li test-id='93' class='gc given pass' status='pass'>
+					<h6 class="step-name" title="SampleTestStepDef.a_user_is_on_the_login_page(String)"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Given a user is on the login page "https://chroma.mexil.it/site/login"</h6>
+					<ul class='screenshots right'>
+						<li><a data-featherlight="image" href="/Users/diegojuarez/Desktop/defenders-test-automation/test-output/screenshots/image_12012023_203607.png"><i class='material-icons'>panorama</i></a></li>
+					</ul>
+					<div class="node-step"></div>
+				</li>
+				<li test-id='94' class='gc when pass' status='pass'>
+					<h6 class="step-name" title="SampleTestStepDef.user_logs_in_with_valid_credentials_username_and_password(String,String)"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>When user logs in with valid credentials username "general@teacher.com" and password "123456"</h6>
+					<div class="node-step"></div>
+				</li>
+				<li test-id='95' class='gc and pass' status='pass'>
+					<h6 class="step-name" title="StudentAdmissionStepDef.navigates_to_Student_Information_Module()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And navigates to Student Information Module</h6>
+					<div class="node-step"></div>
+				</li>
+				<li test-id='96' class='gc and pass' status='pass'>
+					<h6 class="step-name" title="StudentAdmissionStepDef.navigates_to_Student_Admission_Submodule()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And navigates to Student Admission Submodule</h6>
+					<div class="node-step"></div>
+				</li>
+				<li test-id='97' class='gc then pass' status='pass'>
+					<h6 class="step-name" title="StudentAdmissionStepDef.user_is_directed_to_Student_Admission_page_with_the_text(String)"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Then user is directed to Student Admission page with the text "Student Admission"</h6>
+					<div class="node-step"></div>
+				</li>
+				<li test-id='98' class='gc and pass' status='pass'>
+					<h6 class="step-name" title="StudentAdmissionStepDef.enters_Student_unique_Admission_Number(String)"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And enters Student unique Admission Number "65015887"</h6>
+					<div class="node-step"></div>
+				</li>
+				<li test-id='99' class='gc and pass' status='pass'>
+					<h6 class="step-name" title="StudentAdmissionStepDef.selects_Class_and_Section(String,String)"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And selects Class "Cyber Security" and Section "Networking Fundamentals"</h6>
+					<div class="node-step"></div>
+				</li>
+				<li test-id='100' class='gc and pass' status='pass'>
+					<h6 class="step-name" title="StudentAdmissionStepDef.enters_Students_first_name_and_last_name(String,String)"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And enters Students first name "LUIS" and last name "TECH"</h6>
+					<div class="node-step"></div>
+				</li>
+				<li test-id='101' class='gc and pass' status='pass'>
+					<h6 class="step-name" title="StudentAdmissionStepDef.selects_gender(String)"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And selects gender "Male"</h6>
+					<div class="node-step"></div>
+				</li>
+				<li test-id='102' class='gc and pass' status='pass'>
+					<h6 class="step-name" title="StudentAdmissionStepDef.enters_Date_of_Birth(String)"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And enters Date of Birth "03/10/1990"</h6>
+					<div class="node-step"></div>
+				</li>
+				<li test-id='103' class='gc and pass' status='pass'>
+					<h6 class="step-name" title="StudentAdmissionStepDef.for_Parent_Guardian_Details_enters_mothers_name(String)"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And for Parent Guardian Details enters mothers name "BETTER MOM"</h6>
+					<div class="node-step"></div>
+				</li>
+				<li test-id='104' class='gc and pass' status='pass'>
+					<h6 class="step-name" title="StudentAdmissionStepDef.for_If_Guardian_Is_field_clicks_on_Mother_radio_button()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And for If Guardian Is field clicks on Mother radio button</h6>
+					<div class="node-step"></div>
+				</li>
+				<li test-id='105' class='gc and pass' status='pass'>
+					<h6 class="step-name" title="StudentAdmissionStepDef.enters_Guardian_Phone_number(String)"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And enters Guardian Phone number "7036871234"</h6>
+					<div class="node-step"></div>
+				</li>
+				<li test-id='106' class='gc when pass' status='pass'>
+					<h6 class="step-name" title="StudentAdmissionStepDef.user_clicks_on_save_button()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>When user clicks on save button</h6>
+					<div class="node-step"></div>
+				</li>
+				<li test-id='107' class='gc then pass' status='pass'>
+					<h6 class="step-name" title="StudentAdmissionStepDef.student_is_succesfully_saved_and_confirmation_message_displays(String)"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Then student is succesfully saved and confirmation message displays "Record Saved Successfully"</h6>
+					<div class="node-step"></div>
+				</li>
+				<li test-id='108' class='gc when pass' status='pass'>
+					<h6 class="step-name" title="StudentAdmissionStepDef.user_navigates_to_Bulk_Delete_submodule()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>When user navigates to Bulk Delete submodule</h6>
+					<div class="node-step"></div>
+				</li>
+				<li test-id='109' class='gc and pass' status='pass'>
+					<h6 class="step-name" title="StudentAdmissionStepDef.for_Bulk_Delete_selects_Class_and_Section(String,String)"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And for Bulk Delete selects Class "Cyber Security" and Section "Networking Fundamentals"</h6>
+					<div class="node-step"></div>
+				</li>
+				<li test-id='110' class='gc and pass' status='pass'>
+					<h6 class="step-name" title="StudentAdmissionStepDef.clicks_search_button()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And clicks search button</h6>
+					<div class="node-step"></div>
+				</li>
+				<li test-id='111' class='gc then pass' status='pass'>
+					<h6 class="step-name" title="StudentAdmissionStepDef.admitted_student_with_first_name_and_last_name_is_deleted_for_testing_purposes(String,String)"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Then admitted student with first name "LUIS" and last name "TECH" is deleted for testing purposes</h6>
+					<div class="node-step"></div>
 				</li>
 			</ul>
 		</li>
@@ -336,14 +726,15 @@
 					<div class='category-heading'>
 						<span class='category-name'>@Progression</span>
 						<span class='category-status right'>
-						<span class='label others'>2</span>
+						<span class='label pass'>3</span>
+						<span class='label fail'>3</span>
 						</span>
 					</div>
 					<div class='category-content hide'>
 						<div class='category-status-counts'>
+							<span status="pass" class='label green accent-4 white-text'>Passed: 3</span>
+							<span status="fail" class='label red lighten-1 white-text'>Failed: 3</span>
 							
-							
-							<span status="skip" class='label yellow darken-2 white-text'>Skipped: 2</span>
 						</div>
 						<div class='category-tests'>
 							<table class='bordered table-results'>
@@ -356,14 +747,34 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>Jan 12, 2023 08:07:07 PM</td>
+										<td>Jan 12, 2023 08:33:50 PM</td>
 										<td class='linked' test-id='2'>Student Admission</td>
-										<td><span class='test-status skip'>skip</span></td>
+										<td><span class='test-status fail'>fail</span></td>
 									</tr>
 									<tr>
-										<td>Jan 12, 2023 08:07:07 PM</td>
+										<td>Jan 12, 2023 08:33:50 PM</td>
 										<td class='linked' test-id='3'>Student Admission</td>
-										<td><span class='test-status skip'>skip</span></td>
+										<td><span class='test-status fail'>fail</span></td>
+									</tr>
+									<tr>
+										<td>Jan 12, 2023 08:34:17 PM</td>
+										<td class='linked' test-id='25'>Student Admission</td>
+										<td><span class='test-status fail'>fail</span></td>
+									</tr>
+									<tr>
+										<td>Jan 12, 2023 08:34:44 PM</td>
+										<td class='linked' test-id='47'>Student Admission</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jan 12, 2023 08:35:23 PM</td>
+										<td class='linked' test-id='69'>Student Admission</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jan 12, 2023 08:36:05 PM</td>
+										<td class='linked' test-id='91'>Student Admission</td>
+										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 								</tbody>
 							</table>
@@ -379,7 +790,129 @@
 		</div>
 	</div>
 </div>
-<!-- category view --><!-- exception view --><div id='dashboard-view' class='view hide'>
+<!-- category view --><div id='exception-view' class='view hide'>
+	<section id='controls'>
+		<div class='controls grey lighten-4'>
+			<!-- search -->
+			<div class='chip transparent' alt='Search Tests' title='Search Tests'>
+				<a href="#" class='search-div'>
+				<i class='material-icons'>search</i> Search
+				</a>
+				<div class='input-field left hide'>
+					<input id='search-tests' type='text' class='validate browser-default' placeholder='Search Tests...'>
+				</div>
+			</div>
+			<!-- search -->
+		</div>
+	</section>
+	<div class='subview-left left'>
+		<div class='view-summary'>
+			<ul id='exception-collection' class='exception-collection'>
+				<li class='exception displayed active'>
+					<div class='exception-heading'>
+						<span class='exception-name'>org.openqa.selenium.NoSuchElementException</span>
+						<span class='exception-count right'><span class='label red lighten-1 white-text'>2</span></span>
+					</div>
+					<div class='exception-content hide'>
+						<div class='exception-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Jan 12, 2023 08:33:52 PM</td>
+										<td class='linked' test-id='6'>When user logs in with valid credentials username "general@teacher.com" and password "123456"</td>
+										<td>
+											<textarea disabled class="code-block">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//input[@id='form-username']"}
+  (Session info: chrome=109.0.5414.87)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.7.2', revision: '4d4020c3b7'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '15.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [dd3ff444e4de90eecea34a9b613e7bfc, findElement {using=xpath, value=//input[@id='form-username']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.87, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: /var/folders/ph/bzj7vj0x6js...}, goog:chromeOptions: {debuggerAddress: localhost:51123}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:51123/devtoo..., se:cdpVersion: 109.0.5414.87, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: dd3ff444e4de90eecea34a9b613e7bfc
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:535)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:351)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:343)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at com.sun.proxy.$Proxy20.sendKeys(Unknown Source)
+	at com.chroma.stepDefinitions.SampleTestStepDef.user_logs_in_with_valid_credentials_username_and_password(SampleTestStepDef.java:27)
+	at ✽.user logs in with valid credentials username "general@teacher.com" and password "123456"(file:src/test/java/com/chroma/features/Student%20Admission.feature:6)
+</textarea>
+										</td>
+									</tr>
+									<tr>
+										<td>Jan 12, 2023 08:34:19 PM</td>
+										<td class='linked' test-id='28'>When user logs in with valid credentials username "general@teacher.com" and password "123456"</td>
+										<td>
+											<textarea disabled class="code-block">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//input[@id='form-username']"}
+  (Session info: chrome=109.0.5414.87)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.7.2', revision: '4d4020c3b7'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '15.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [a24e0900c635c64d6572da99b23d4aee, findElement {using=xpath, value=//input[@id='form-username']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.87, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: /var/folders/ph/bzj7vj0x6js...}, goog:chromeOptions: {debuggerAddress: localhost:51251}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:51251/devtoo..., se:cdpVersion: 109.0.5414.87, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: a24e0900c635c64d6572da99b23d4aee
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:535)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:351)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:343)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at com.sun.proxy.$Proxy20.sendKeys(Unknown Source)
+	at com.chroma.stepDefinitions.SampleTestStepDef.user_logs_in_with_valid_credentials_username_and_password(SampleTestStepDef.java:27)
+	at ✽.user logs in with valid credentials username "general@teacher.com" and password "123456"(file:src/test/java/com/chroma/features/Student%20Admission.feature:6)
+</textarea>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class='subview-right left'>
+		<div class='view-summary'>
+			<h5 class='exception-name'></h5>
+		</div>
+	</div>
+</div>
+<!-- exception view --><div id='dashboard-view' class='view hide'>
 	<div class='card-panel transparent np-v'>
 		<h5>Dashboard</h5>
 
@@ -393,31 +926,31 @@
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Scenarios
-					<div class='panel-lead'>1</div>
+					<div class='panel-lead'>5</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Steps
-					<div class='panel-lead'>22</div>
+					<div class='panel-lead'>95</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>Jan 12, 2023 08:07:06 PM</div>
+					<div class='panel-lead'>Jan 12, 2023 08:33:43 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>Jan 12, 2023 08:07:07 PM</div>
+			 		<div class='panel-lead'>Jan 12, 2023 08:36:39 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>0h 0m 0s+813ms</div>
+					<div class='panel-lead'>0h 2m 56s+160ms</div>
 				</div>
 			</div>
 			<div class='col s6'>
@@ -434,11 +967,11 @@
 						</tr>
 						<tr>
 							<td>@Progression</td>
+							<td>3</td>
+							<td>3</td>
 							<td>0</td>
-							<td>0</td>
-							<td>2</td>
 							<td>
-									0%
+									50%
 							</td>
 						</tr>
 					</table>
@@ -454,37 +987,37 @@
 			var statusGroup = {
                 parentCount: 1,
 				passParent: 0,
-				failParent: 0,
+				failParent: 1,
 				fatalParent: 0,
 				errorParent: 0,
 				warningParent: 0,
-				skipParent: 1,
+				skipParent: 0,
 				exceptionsParent: 1,
-				childCount: 1,
-				passChild: 0,
-				failChild: 0,
+				childCount: 5,
+				passChild: 3,
+				failChild: 2,
 				fatalChild: 0,
 				errorChild: 0,
 				warningChild: 0,
-				skipChild: 1,
+				skipChild: 0,
 				infoChild: 0,
 				debugChild: 0,
-				exceptionsChild: 1,
-				grandChildCount: 22,
-				passGrandChild: 1,
-				failGrandChild: 0,
+				exceptionsChild: 2,
+				grandChildCount: 95,
+				passGrandChild: 59,
+				failGrandChild: 2,
 				fatalGrandChild: 0,
 				errorGrandChild: 0,
 				warningGrandChild: 0,
-				skipGrandChild: 21,
+				skipGrandChild: 34,
 				infoGrandChild: 0,
 				debugGrandChild: 0,
-				exceptionsGrandChild: 21,
+				exceptionsGrandChild: 36,
 			};
 		</script>
 		<script>
 			var timeline = {
-			        "Student Admission Test Scenarios":0.075
+			        "Student Admission Test Scenarios":168.539
 			};
 		</script>
 	
