@@ -21,6 +21,10 @@ public class BulkDeletePage {
     @FindBy(xpath = "//button[normalize-space()='Search']")
     public WebElement searchButton;
 
+    /* DELETE BUTTON */
+    @FindBy(xpath = "//button[normalize-space()='Delete']")
+    public WebElement deleteButton;
+
     public static WebElement studentRecordLocator(String studentRecord) {
 
        return WebDriverUtils.driver
