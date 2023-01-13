@@ -3,11 +3,11 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2023-01-12T01:38:41.299Z",
+        "start_timestamp": "2023-01-13T00:37:48.429Z",
         "before": [
           {
             "result": {
-              "duration": 6718980250,
+              "duration": 6620572125,
               "status": "passed"
             },
             "match": {
@@ -22,7 +22,7 @@
         "after": [
           {
             "result": {
-              "duration": 120170375,
+              "duration": 130036167,
               "status": "passed"
             },
             "match": {
@@ -41,7 +41,7 @@
               }
             ],
             "result": {
-              "duration": 2550122625,
+              "duration": 2195852333,
               "status": "passed"
             },
             "line": 5,
@@ -59,7 +59,7 @@
           },
           {
             "result": {
-              "duration": 13668716375,
+              "duration": 12816760167,
               "status": "passed"
             },
             "line": 6,
@@ -81,7 +81,7 @@
           },
           {
             "result": {
-              "duration": 327314959,
+              "duration": 323758042,
               "status": "passed"
             },
             "line": 7,
@@ -93,7 +93,7 @@
           },
           {
             "result": {
-              "duration": 1830575500,
+              "duration": 3510074083,
               "status": "passed"
             },
             "line": 20,
@@ -105,7 +105,7 @@
           },
           {
             "result": {
-              "duration": 972409458,
+              "duration": 1450195500,
               "status": "passed"
             },
             "line": 21,
@@ -127,7 +127,7 @@
           },
           {
             "result": {
-              "duration": 5671424417,
+              "duration": 3112959833,
               "status": "passed"
             },
             "line": 22,
@@ -136,6 +136,24 @@
               "location": "StudentAdmissionStepDef.clicks_search_button()"
             },
             "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2179619083,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "admitted student \"Chroma Tech\" is deleted for testing purposes",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Chroma Tech\"",
+                  "offset": 17
+                }
+              ],
+              "location": "StudentAdmissionStepDef.admitted_student_is_deleted_for_testing_purposes(String)"
+            },
+            "keyword": "Then "
           }
         ],
         "tags": [
