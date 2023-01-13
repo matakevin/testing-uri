@@ -20,9 +20,12 @@ Feature: Student Admission Test Scenarios
     When user navigates to Bulk Delete submodule
     And for Bulk Delete selects Class "<CLASS>" and Section "<SECTION>"
     And clicks search button
-    Then admitted student "Chroma Tech" is deleted for testing purposes
     Then admitted student with first name "<FIRST NAME>" and last name "<LAST NAME>" is deleted for testing purposes
 
     Examples: 
-      | URL                                                 | USERNAME            | PASSWORD | ADMISSION NUMBER | CLASS | SECTION              | FIRST NAME | LAST NAME | GENDER | DOB        | MOTHERS NAME | GUARDIAN PHONE NUMBER |
-      | https://mexil.it/chroma_tech_academy/dev/site/login | general@teacher.com |   123456 |            12345 | SDET  | Testing Fundamentals | CHROMA     | TECH      | Female | 04/01/1990 | CHROMA MOM   |            7036875816 |
+      | URL                                                   | USERNAME            | PASSWORD | ADMISSION NUMBER | CLASS          | SECTION                 | FIRST NAME | LAST NAME | GENDER | DOB        | MOTHERS NAME | GUARDIAN PHONE NUMBER |
+      | https://mexil.it/chroma_tech_academy/dev/site/login   | general@teacher.com |   123456 |            12345 | SDET           | Testing Fundamentals    | CHROMA     | TECH      | Female | 04/01/1990 | CHROMA MOM   |            7036875816 |
+      | https://mexil.it/chroma_tech_academy/dev/site/login   | general@teacher.com |   123456 |            12345 | Cyber Security | Networking Fundamentals | DIEGO      | TECH      | Male   | 03/10/1990 | BEST MOM     |            7036871234 |
+      | https://mexil.it/chroma_tech_academy/test/site/login  | general@teacher.com |   123456 |            12345 | Cyber Security | Networking Fundamentals | DIEGO      | TECH      | Male   | 03/10/1990 | BEST MOM     |            7036871234 |
+      | https://mexil.it/chroma_tech_academy/stage/site/login | general@teacher.com |   123456 |            12345 | Cyber Security | Networking Fundamentals | DIEGO      | TECH      | Male   | 03/10/1990 | BEST MOM     |            7036871234 |
+      | https://chroma.mexil.it/site/login                    | general@teacher.com |   123456 |            12345 | Cyber Security | Networking Fundamentals | DIEGO      | TECH      | Male   | 03/10/1990 | BEST MOM     |            7036871234 |
