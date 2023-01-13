@@ -51,6 +51,14 @@
 							</a>
 						</li>
 						<li>
+							<a href="exception.html">
+							<span class="nav-icon">
+							<i class="fa fa-warning"></i>
+							</span>
+							<span class="nav-text">Exceptions</span>
+							</a>
+						</li>
+						<li>
 							<a href="dashboard.html">
 							<span class="nav-icon">
 							<i class="fa fa-dashboard"></i>
@@ -95,7 +103,7 @@
 									</a>
 									<div class="dropdown-menu pt-0 mt-2 animate fadeIn">
 										<a class="dropdown-item" href="#"><span class="tf" status="pass"><i class="fa fa-dot-circle-o text-success"></i>Pass</span></a>
-										
+										<a class="dropdown-item" href="#"><span class="tf" status="fail"><i class="fa fa-dot-circle-o text-danger"></i>Fail</span></a>
 										
 										
 										
@@ -129,20 +137,20 @@
 								<div class="col-md-8 col-sm-12">
 									<div class="logger-content">
 										<h6 class="mb-3 ml-1">Test Logs</h6>
-											<div class="tsc" status="skip">
-											<div class="st skip test l0" 
+											<div class="tsc" status="fail">
+											<div class="st fail test l0" 
 												tags=""
 												devices="">
-												<span class="tt">01.12.2023 20:07:07</span>&nbsp;
-												<span class="ts">skip</span>&nbsp;&nbsp;
+												<span class="tt">01.12.2023 20:33:50</span>&nbsp;
+												<span class="ts">fail</span>&nbsp;&nbsp;
 												<span class="tn">[Student Admission Test Scenarios] started</span>
 												
 											</div>
-											<div class="st skip test l1" 
+											<div class="st fail test l1" 
 												tags="@Progression"
 												devices="">
-												<span class="tt">01.12.2023 20:07:07</span>&nbsp;
-												<span class="ts">skip</span>&nbsp;&nbsp;
+												<span class="tt">01.12.2023 20:33:50</span>&nbsp;
+												<span class="ts">fail</span>&nbsp;&nbsp;
 												<span class="tn">|---[Student Admission] started</span>
 												<span class="category-list">
 													<span class="category badge"><i class="fa fa-tag"></i> @Progression</span>
@@ -153,11 +161,11 @@
 												</span>
 												
 											</div>
-											<div class="st skip test l2" 
+											<div class="st fail test l2" 
 												tags="@Progression"
 												devices="">
-												<span class="tt">01.12.2023 20:07:07</span>&nbsp;
-												<span class="ts">skip</span>&nbsp;&nbsp;
+												<span class="tt">01.12.2023 20:33:50</span>&nbsp;
+												<span class="ts">fail</span>&nbsp;&nbsp;
 												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Student Admission] started</span>
 												<span class="category-list">
 													<span class="category badge"><i class="fa fa-tag"></i> @Progression</span>
@@ -168,60 +176,75 @@
 												</span>
 												
 											</div>
-											<div class="st skip test l3" 
+											<div class="st pass test l3" 
 												tags=""
 												devices="">
-												<span class="tt">01.12.2023 20:07:07</span>&nbsp;
-												<span class="ts">skip</span>&nbsp;&nbsp;
-												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[Hooks.start(Scenario)] started</span>
-												
-												<div class="st skip">
-													<span class="tt">01.12.2023 20:07:07</span>&nbsp;
-													<span class="ts">skip</span>&nbsp;&nbsp; 
-													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[Hooks.start(Scenario)]</span>
-													
-													<span class="td">Step skipped</span>
-												</div>
-											</div>
-											<div class="st skip test l3" 
-												tags=""
-												devices="">
-												<span class="tt">01.12.2023 20:07:07</span>&nbsp;
-												<span class="ts">skip</span>&nbsp;&nbsp;
+												<span class="tt">01.12.2023 20:33:50</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
 												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[Given a user is on the login page "https://mexil.it/chroma_tech_academy/dev/site/login"] started</span>
 												
-												<div class="st skip">
-													<span class="tt">01.12.2023 20:07:07</span>&nbsp;
-													<span class="ts">skip</span>&nbsp;&nbsp; 
+												<div class="st info">
+													<span class="tt">01.12.2023 20:33:51</span>&nbsp;
+													<span class="ts">info</span>&nbsp;&nbsp; 
 													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[Given a user is on the login page "https://mexil.it/chroma_tech_academy/dev/site/login"]</span>
-													
-													<span class="td">Step skipped</span>
+													<span class="tm"><img class='r-img' onerror='this.style.display="none"' data-featherlight='test-output/embedded1.png' src='test-output/embedded1.png'></span>
+													<span class="td"></span>
 												</div>
 											</div>
-											<div class="st skip test l3" 
+											<div class="st fail test l3" 
 												tags=""
 												devices="">
-												<span class="tt">01.12.2023 20:07:07</span>&nbsp;
-												<span class="ts">skip</span>&nbsp;&nbsp;
+												<span class="tt">01.12.2023 20:33:52</span>&nbsp;
+												<span class="ts">fail</span>&nbsp;&nbsp;
 												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[When user logs in with valid credentials username "general@teacher.com" and password "123456"] started</span>
 												
-												<div class="st skip">
-													<span class="tt">01.12.2023 20:07:07</span>&nbsp;
-													<span class="ts">skip</span>&nbsp;&nbsp; 
+												<div class="st fail">
+													<span class="tt">01.12.2023 20:34:12</span>&nbsp;
+													<span class="ts">fail</span>&nbsp;&nbsp; 
 													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[When user logs in with valid credentials username "general@teacher.com" and password "123456"]</span>
 													
-													<span class="td">Step skipped</span>
+													<span class="td">threw an exception<br><textarea disabled class="code-block">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//input[@id='form-username']"}
+  (Session info: chrome=109.0.5414.87)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.7.2', revision: '4d4020c3b7'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '15.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [dd3ff444e4de90eecea34a9b613e7bfc, findElement {using=xpath, value=//input[@id='form-username']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.87, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: /var/folders/ph/bzj7vj0x6js...}, goog:chromeOptions: {debuggerAddress: localhost:51123}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:51123/devtoo..., se:cdpVersion: 109.0.5414.87, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: dd3ff444e4de90eecea34a9b613e7bfc
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:535)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:351)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:343)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at com.sun.proxy.$Proxy20.sendKeys(Unknown Source)
+	at com.chroma.stepDefinitions.SampleTestStepDef.user_logs_in_with_valid_credentials_username_and_password(SampleTestStepDef.java:27)
+	at ✽.user logs in with valid credentials username "general@teacher.com" and password "123456"(file:src/test/java/com/chroma/features/Student%20Admission.feature:6)
+</textarea></span>
 												</div>
 											</div>
 											<div class="st skip test l3" 
 												tags=""
 												devices="">
-												<span class="tt">01.12.2023 20:07:07</span>&nbsp;
+												<span class="tt">01.12.2023 20:34:12</span>&nbsp;
 												<span class="ts">skip</span>&nbsp;&nbsp;
 												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[And navigates to Student Information Module] started</span>
 												
 												<div class="st skip">
-													<span class="tt">01.12.2023 20:07:07</span>&nbsp;
+													<span class="tt">01.12.2023 20:34:12</span>&nbsp;
 													<span class="ts">skip</span>&nbsp;&nbsp; 
 													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[And navigates to Student Information Module]</span>
 													
@@ -231,12 +254,12 @@
 											<div class="st skip test l3" 
 												tags=""
 												devices="">
-												<span class="tt">01.12.2023 20:07:07</span>&nbsp;
+												<span class="tt">01.12.2023 20:34:12</span>&nbsp;
 												<span class="ts">skip</span>&nbsp;&nbsp;
 												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[And navigates to Student Admission Submodule] started</span>
 												
 												<div class="st skip">
-													<span class="tt">01.12.2023 20:07:07</span>&nbsp;
+													<span class="tt">01.12.2023 20:34:12</span>&nbsp;
 													<span class="ts">skip</span>&nbsp;&nbsp; 
 													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[And navigates to Student Admission Submodule]</span>
 													
@@ -246,12 +269,12 @@
 											<div class="st skip test l3" 
 												tags=""
 												devices="">
-												<span class="tt">01.12.2023 20:07:07</span>&nbsp;
+												<span class="tt">01.12.2023 20:34:12</span>&nbsp;
 												<span class="ts">skip</span>&nbsp;&nbsp;
 												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[Then user is directed to Student Admission page with the text "Student Admission"] started</span>
 												
 												<div class="st skip">
-													<span class="tt">01.12.2023 20:07:07</span>&nbsp;
+													<span class="tt">01.12.2023 20:34:12</span>&nbsp;
 													<span class="ts">skip</span>&nbsp;&nbsp; 
 													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[Then user is directed to Student Admission page with the text "Student Admission"]</span>
 													
@@ -261,14 +284,14 @@
 											<div class="st skip test l3" 
 												tags=""
 												devices="">
-												<span class="tt">01.12.2023 20:07:07</span>&nbsp;
+												<span class="tt">01.12.2023 20:34:12</span>&nbsp;
 												<span class="ts">skip</span>&nbsp;&nbsp;
-												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[And enters Student unique Admission Number "12345"] started</span>
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[And enters Student unique Admission Number "65015887"] started</span>
 												
 												<div class="st skip">
-													<span class="tt">01.12.2023 20:07:07</span>&nbsp;
+													<span class="tt">01.12.2023 20:34:12</span>&nbsp;
 													<span class="ts">skip</span>&nbsp;&nbsp; 
-													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[And enters Student unique Admission Number "12345"]</span>
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[And enters Student unique Admission Number "65015887"]</span>
 													
 													<span class="td">Step skipped</span>
 												</div>
@@ -276,12 +299,12 @@
 											<div class="st skip test l3" 
 												tags=""
 												devices="">
-												<span class="tt">01.12.2023 20:07:07</span>&nbsp;
+												<span class="tt">01.12.2023 20:34:12</span>&nbsp;
 												<span class="ts">skip</span>&nbsp;&nbsp;
 												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[And selects Class "SDET" and Section "Testing Fundamentals"] started</span>
 												
 												<div class="st skip">
-													<span class="tt">01.12.2023 20:07:07</span>&nbsp;
+													<span class="tt">01.12.2023 20:34:12</span>&nbsp;
 													<span class="ts">skip</span>&nbsp;&nbsp; 
 													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[And selects Class "SDET" and Section "Testing Fundamentals"]</span>
 													
@@ -291,12 +314,12 @@
 											<div class="st skip test l3" 
 												tags=""
 												devices="">
-												<span class="tt">01.12.2023 20:07:07</span>&nbsp;
+												<span class="tt">01.12.2023 20:34:12</span>&nbsp;
 												<span class="ts">skip</span>&nbsp;&nbsp;
 												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[And enters Students first name "CHROMA" and last name "TECH"] started</span>
 												
 												<div class="st skip">
-													<span class="tt">01.12.2023 20:07:07</span>&nbsp;
+													<span class="tt">01.12.2023 20:34:12</span>&nbsp;
 													<span class="ts">skip</span>&nbsp;&nbsp; 
 													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[And enters Students first name "CHROMA" and last name "TECH"]</span>
 													
@@ -306,12 +329,12 @@
 											<div class="st skip test l3" 
 												tags=""
 												devices="">
-												<span class="tt">01.12.2023 20:07:07</span>&nbsp;
+												<span class="tt">01.12.2023 20:34:12</span>&nbsp;
 												<span class="ts">skip</span>&nbsp;&nbsp;
 												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[And selects gender "Female"] started</span>
 												
 												<div class="st skip">
-													<span class="tt">01.12.2023 20:07:07</span>&nbsp;
+													<span class="tt">01.12.2023 20:34:12</span>&nbsp;
 													<span class="ts">skip</span>&nbsp;&nbsp; 
 													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[And selects gender "Female"]</span>
 													
@@ -321,12 +344,12 @@
 											<div class="st skip test l3" 
 												tags=""
 												devices="">
-												<span class="tt">01.12.2023 20:07:07</span>&nbsp;
+												<span class="tt">01.12.2023 20:34:12</span>&nbsp;
 												<span class="ts">skip</span>&nbsp;&nbsp;
 												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[And enters Date of Birth "04/01/1990"] started</span>
 												
 												<div class="st skip">
-													<span class="tt">01.12.2023 20:07:07</span>&nbsp;
+													<span class="tt">01.12.2023 20:34:12</span>&nbsp;
 													<span class="ts">skip</span>&nbsp;&nbsp; 
 													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[And enters Date of Birth "04/01/1990"]</span>
 													
@@ -336,12 +359,12 @@
 											<div class="st skip test l3" 
 												tags=""
 												devices="">
-												<span class="tt">01.12.2023 20:07:07</span>&nbsp;
+												<span class="tt">01.12.2023 20:34:12</span>&nbsp;
 												<span class="ts">skip</span>&nbsp;&nbsp;
 												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[And for Parent Guardian Details enters mothers name "CHROMA MOM"] started</span>
 												
 												<div class="st skip">
-													<span class="tt">01.12.2023 20:07:07</span>&nbsp;
+													<span class="tt">01.12.2023 20:34:12</span>&nbsp;
 													<span class="ts">skip</span>&nbsp;&nbsp; 
 													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[And for Parent Guardian Details enters mothers name "CHROMA MOM"]</span>
 													
@@ -351,12 +374,12 @@
 											<div class="st skip test l3" 
 												tags=""
 												devices="">
-												<span class="tt">01.12.2023 20:07:07</span>&nbsp;
+												<span class="tt">01.12.2023 20:34:12</span>&nbsp;
 												<span class="ts">skip</span>&nbsp;&nbsp;
 												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[And for If Guardian Is field clicks on Mother radio button] started</span>
 												
 												<div class="st skip">
-													<span class="tt">01.12.2023 20:07:07</span>&nbsp;
+													<span class="tt">01.12.2023 20:34:12</span>&nbsp;
 													<span class="ts">skip</span>&nbsp;&nbsp; 
 													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[And for If Guardian Is field clicks on Mother radio button]</span>
 													
@@ -366,12 +389,12 @@
 											<div class="st skip test l3" 
 												tags=""
 												devices="">
-												<span class="tt">01.12.2023 20:07:07</span>&nbsp;
+												<span class="tt">01.12.2023 20:34:12</span>&nbsp;
 												<span class="ts">skip</span>&nbsp;&nbsp;
 												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[And enters Guardian Phone number "7036875816"] started</span>
 												
 												<div class="st skip">
-													<span class="tt">01.12.2023 20:07:07</span>&nbsp;
+													<span class="tt">01.12.2023 20:34:12</span>&nbsp;
 													<span class="ts">skip</span>&nbsp;&nbsp; 
 													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[And enters Guardian Phone number "7036875816"]</span>
 													
@@ -381,12 +404,12 @@
 											<div class="st skip test l3" 
 												tags=""
 												devices="">
-												<span class="tt">01.12.2023 20:07:07</span>&nbsp;
+												<span class="tt">01.12.2023 20:34:12</span>&nbsp;
 												<span class="ts">skip</span>&nbsp;&nbsp;
 												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[When user clicks on save button] started</span>
 												
 												<div class="st skip">
-													<span class="tt">01.12.2023 20:07:07</span>&nbsp;
+													<span class="tt">01.12.2023 20:34:12</span>&nbsp;
 													<span class="ts">skip</span>&nbsp;&nbsp; 
 													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[When user clicks on save button]</span>
 													
@@ -396,12 +419,12 @@
 											<div class="st skip test l3" 
 												tags=""
 												devices="">
-												<span class="tt">01.12.2023 20:07:07</span>&nbsp;
+												<span class="tt">01.12.2023 20:34:12</span>&nbsp;
 												<span class="ts">skip</span>&nbsp;&nbsp;
 												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[Then student is succesfully saved and confirmation message displays "Record Saved Successfully"] started</span>
 												
 												<div class="st skip">
-													<span class="tt">01.12.2023 20:07:07</span>&nbsp;
+													<span class="tt">01.12.2023 20:34:12</span>&nbsp;
 													<span class="ts">skip</span>&nbsp;&nbsp; 
 													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[Then student is succesfully saved and confirmation message displays "Record Saved Successfully"]</span>
 													
@@ -411,12 +434,12 @@
 											<div class="st skip test l3" 
 												tags=""
 												devices="">
-												<span class="tt">01.12.2023 20:07:07</span>&nbsp;
+												<span class="tt">01.12.2023 20:34:12</span>&nbsp;
 												<span class="ts">skip</span>&nbsp;&nbsp;
 												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[When user navigates to Bulk Delete submodule] started</span>
 												
 												<div class="st skip">
-													<span class="tt">01.12.2023 20:07:07</span>&nbsp;
+													<span class="tt">01.12.2023 20:34:12</span>&nbsp;
 													<span class="ts">skip</span>&nbsp;&nbsp; 
 													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[When user navigates to Bulk Delete submodule]</span>
 													
@@ -426,12 +449,12 @@
 											<div class="st skip test l3" 
 												tags=""
 												devices="">
-												<span class="tt">01.12.2023 20:07:07</span>&nbsp;
+												<span class="tt">01.12.2023 20:34:12</span>&nbsp;
 												<span class="ts">skip</span>&nbsp;&nbsp;
 												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[And for Bulk Delete selects Class "SDET" and Section "Testing Fundamentals"] started</span>
 												
 												<div class="st skip">
-													<span class="tt">01.12.2023 20:07:07</span>&nbsp;
+													<span class="tt">01.12.2023 20:34:12</span>&nbsp;
 													<span class="ts">skip</span>&nbsp;&nbsp; 
 													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[And for Bulk Delete selects Class "SDET" and Section "Testing Fundamentals"]</span>
 													
@@ -441,12 +464,12 @@
 											<div class="st skip test l3" 
 												tags=""
 												devices="">
-												<span class="tt">01.12.2023 20:07:07</span>&nbsp;
+												<span class="tt">01.12.2023 20:34:12</span>&nbsp;
 												<span class="ts">skip</span>&nbsp;&nbsp;
 												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[And clicks search button] started</span>
 												
 												<div class="st skip">
-													<span class="tt">01.12.2023 20:07:07</span>&nbsp;
+													<span class="tt">01.12.2023 20:34:12</span>&nbsp;
 													<span class="ts">skip</span>&nbsp;&nbsp; 
 													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[And clicks search button]</span>
 													
@@ -456,39 +479,1246 @@
 											<div class="st skip test l3" 
 												tags=""
 												devices="">
-												<span class="tt">01.12.2023 20:07:07</span>&nbsp;
+												<span class="tt">01.12.2023 20:34:12</span>&nbsp;
 												<span class="ts">skip</span>&nbsp;&nbsp;
-												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[Then admitted student "Chroma Tech" is deleted for testing purposes] started</span>
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[Then admitted student with first name "CHROMA" and last name "TECH" is deleted for testing purposes] started</span>
 												
 												<div class="st skip">
-													<span class="tt">01.12.2023 20:07:07</span>&nbsp;
+													<span class="tt">01.12.2023 20:34:12</span>&nbsp;
 													<span class="ts">skip</span>&nbsp;&nbsp; 
-													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[Then admitted student "Chroma Tech" is deleted for testing purposes]</span>
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[Then admitted student with first name "CHROMA" and last name "TECH" is deleted for testing purposes]</span>
 													
 													<span class="td">Step skipped</span>
+												</div>
+											</div>
+											<div class="st fail test l2" 
+												tags="@Progression"
+												devices="">
+												<span class="tt">01.12.2023 20:34:17</span>&nbsp;
+												<span class="ts">fail</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Student Admission] started</span>
+												<span class="category-list">
+													<span class="category badge"><i class="fa fa-tag"></i> @Progression</span>
+												</span>
+												<span class="author-list">
+												</span>
+												<span class="device-list">
+												</span>
+												
+											</div>
+											<div class="st pass test l3" 
+												tags=""
+												devices="">
+												<span class="tt">01.12.2023 20:34:17</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[Given a user is on the login page "https://mexil.it/chroma_tech_academy/dev/site/login"] started</span>
+												
+												<div class="st info">
+													<span class="tt">01.12.2023 20:34:18</span>&nbsp;
+													<span class="ts">info</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[Given a user is on the login page "https://mexil.it/chroma_tech_academy/dev/site/login"]</span>
+													<span class="tm"><img class='r-img' onerror='this.style.display="none"' data-featherlight='test-output/embedded2.png' src='test-output/embedded2.png'></span>
+													<span class="td"></span>
+												</div>
+											</div>
+											<div class="st fail test l3" 
+												tags=""
+												devices="">
+												<span class="tt">01.12.2023 20:34:19</span>&nbsp;
+												<span class="ts">fail</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[When user logs in with valid credentials username "general@teacher.com" and password "123456"] started</span>
+												
+												<div class="st fail">
+													<span class="tt">01.12.2023 20:34:39</span>&nbsp;
+													<span class="ts">fail</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[When user logs in with valid credentials username "general@teacher.com" and password "123456"]</span>
+													
+													<span class="td">threw an exception<br><textarea disabled class="code-block">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//input[@id='form-username']"}
+  (Session info: chrome=109.0.5414.87)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.7.2', revision: '4d4020c3b7'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '15.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [a24e0900c635c64d6572da99b23d4aee, findElement {using=xpath, value=//input[@id='form-username']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.87, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: /var/folders/ph/bzj7vj0x6js...}, goog:chromeOptions: {debuggerAddress: localhost:51251}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:51251/devtoo..., se:cdpVersion: 109.0.5414.87, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: a24e0900c635c64d6572da99b23d4aee
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:535)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:351)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:343)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at com.sun.proxy.$Proxy20.sendKeys(Unknown Source)
+	at com.chroma.stepDefinitions.SampleTestStepDef.user_logs_in_with_valid_credentials_username_and_password(SampleTestStepDef.java:27)
+	at ✽.user logs in with valid credentials username "general@teacher.com" and password "123456"(file:src/test/java/com/chroma/features/Student%20Admission.feature:6)
+</textarea></span>
+												</div>
+											</div>
+											<div class="st skip test l3" 
+												tags=""
+												devices="">
+												<span class="tt">01.12.2023 20:34:39</span>&nbsp;
+												<span class="ts">skip</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[And navigates to Student Information Module] started</span>
+												
+												<div class="st skip">
+													<span class="tt">01.12.2023 20:34:39</span>&nbsp;
+													<span class="ts">skip</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[And navigates to Student Information Module]</span>
+													
+													<span class="td">Step skipped</span>
+												</div>
+											</div>
+											<div class="st skip test l3" 
+												tags=""
+												devices="">
+												<span class="tt">01.12.2023 20:34:39</span>&nbsp;
+												<span class="ts">skip</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[And navigates to Student Admission Submodule] started</span>
+												
+												<div class="st skip">
+													<span class="tt">01.12.2023 20:34:39</span>&nbsp;
+													<span class="ts">skip</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[And navigates to Student Admission Submodule]</span>
+													
+													<span class="td">Step skipped</span>
+												</div>
+											</div>
+											<div class="st skip test l3" 
+												tags=""
+												devices="">
+												<span class="tt">01.12.2023 20:34:39</span>&nbsp;
+												<span class="ts">skip</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[Then user is directed to Student Admission page with the text "Student Admission"] started</span>
+												
+												<div class="st skip">
+													<span class="tt">01.12.2023 20:34:39</span>&nbsp;
+													<span class="ts">skip</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[Then user is directed to Student Admission page with the text "Student Admission"]</span>
+													
+													<span class="td">Step skipped</span>
+												</div>
+											</div>
+											<div class="st skip test l3" 
+												tags=""
+												devices="">
+												<span class="tt">01.12.2023 20:34:39</span>&nbsp;
+												<span class="ts">skip</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[And enters Student unique Admission Number "65015887"] started</span>
+												
+												<div class="st skip">
+													<span class="tt">01.12.2023 20:34:39</span>&nbsp;
+													<span class="ts">skip</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[And enters Student unique Admission Number "65015887"]</span>
+													
+													<span class="td">Step skipped</span>
+												</div>
+											</div>
+											<div class="st skip test l3" 
+												tags=""
+												devices="">
+												<span class="tt">01.12.2023 20:34:39</span>&nbsp;
+												<span class="ts">skip</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[And selects Class "Cyber Security" and Section "Networking Fundamentals"] started</span>
+												
+												<div class="st skip">
+													<span class="tt">01.12.2023 20:34:39</span>&nbsp;
+													<span class="ts">skip</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[And selects Class "Cyber Security" and Section "Networking Fundamentals"]</span>
+													
+													<span class="td">Step skipped</span>
+												</div>
+											</div>
+											<div class="st skip test l3" 
+												tags=""
+												devices="">
+												<span class="tt">01.12.2023 20:34:39</span>&nbsp;
+												<span class="ts">skip</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[And enters Students first name "DIEGO" and last name "TECH"] started</span>
+												
+												<div class="st skip">
+													<span class="tt">01.12.2023 20:34:39</span>&nbsp;
+													<span class="ts">skip</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[And enters Students first name "DIEGO" and last name "TECH"]</span>
+													
+													<span class="td">Step skipped</span>
+												</div>
+											</div>
+											<div class="st skip test l3" 
+												tags=""
+												devices="">
+												<span class="tt">01.12.2023 20:34:39</span>&nbsp;
+												<span class="ts">skip</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[And selects gender "Male"] started</span>
+												
+												<div class="st skip">
+													<span class="tt">01.12.2023 20:34:39</span>&nbsp;
+													<span class="ts">skip</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[And selects gender "Male"]</span>
+													
+													<span class="td">Step skipped</span>
+												</div>
+											</div>
+											<div class="st skip test l3" 
+												tags=""
+												devices="">
+												<span class="tt">01.12.2023 20:34:39</span>&nbsp;
+												<span class="ts">skip</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[And enters Date of Birth "03/10/1990"] started</span>
+												
+												<div class="st skip">
+													<span class="tt">01.12.2023 20:34:39</span>&nbsp;
+													<span class="ts">skip</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[And enters Date of Birth "03/10/1990"]</span>
+													
+													<span class="td">Step skipped</span>
+												</div>
+											</div>
+											<div class="st skip test l3" 
+												tags=""
+												devices="">
+												<span class="tt">01.12.2023 20:34:39</span>&nbsp;
+												<span class="ts">skip</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[And for Parent Guardian Details enters mothers name "BEST MOM"] started</span>
+												
+												<div class="st skip">
+													<span class="tt">01.12.2023 20:34:39</span>&nbsp;
+													<span class="ts">skip</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[And for Parent Guardian Details enters mothers name "BEST MOM"]</span>
+													
+													<span class="td">Step skipped</span>
+												</div>
+											</div>
+											<div class="st skip test l3" 
+												tags=""
+												devices="">
+												<span class="tt">01.12.2023 20:34:39</span>&nbsp;
+												<span class="ts">skip</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[And for If Guardian Is field clicks on Mother radio button] started</span>
+												
+												<div class="st skip">
+													<span class="tt">01.12.2023 20:34:39</span>&nbsp;
+													<span class="ts">skip</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[And for If Guardian Is field clicks on Mother radio button]</span>
+													
+													<span class="td">Step skipped</span>
+												</div>
+											</div>
+											<div class="st skip test l3" 
+												tags=""
+												devices="">
+												<span class="tt">01.12.2023 20:34:39</span>&nbsp;
+												<span class="ts">skip</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[And enters Guardian Phone number "7036871234"] started</span>
+												
+												<div class="st skip">
+													<span class="tt">01.12.2023 20:34:39</span>&nbsp;
+													<span class="ts">skip</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[And enters Guardian Phone number "7036871234"]</span>
+													
+													<span class="td">Step skipped</span>
+												</div>
+											</div>
+											<div class="st skip test l3" 
+												tags=""
+												devices="">
+												<span class="tt">01.12.2023 20:34:39</span>&nbsp;
+												<span class="ts">skip</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[When user clicks on save button] started</span>
+												
+												<div class="st skip">
+													<span class="tt">01.12.2023 20:34:39</span>&nbsp;
+													<span class="ts">skip</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[When user clicks on save button]</span>
+													
+													<span class="td">Step skipped</span>
+												</div>
+											</div>
+											<div class="st skip test l3" 
+												tags=""
+												devices="">
+												<span class="tt">01.12.2023 20:34:39</span>&nbsp;
+												<span class="ts">skip</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[Then student is succesfully saved and confirmation message displays "Record Saved Successfully"] started</span>
+												
+												<div class="st skip">
+													<span class="tt">01.12.2023 20:34:39</span>&nbsp;
+													<span class="ts">skip</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[Then student is succesfully saved and confirmation message displays "Record Saved Successfully"]</span>
+													
+													<span class="td">Step skipped</span>
+												</div>
+											</div>
+											<div class="st skip test l3" 
+												tags=""
+												devices="">
+												<span class="tt">01.12.2023 20:34:39</span>&nbsp;
+												<span class="ts">skip</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[When user navigates to Bulk Delete submodule] started</span>
+												
+												<div class="st skip">
+													<span class="tt">01.12.2023 20:34:39</span>&nbsp;
+													<span class="ts">skip</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[When user navigates to Bulk Delete submodule]</span>
+													
+													<span class="td">Step skipped</span>
+												</div>
+											</div>
+											<div class="st skip test l3" 
+												tags=""
+												devices="">
+												<span class="tt">01.12.2023 20:34:39</span>&nbsp;
+												<span class="ts">skip</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[And for Bulk Delete selects Class "Cyber Security" and Section "Networking Fundamentals"] started</span>
+												
+												<div class="st skip">
+													<span class="tt">01.12.2023 20:34:39</span>&nbsp;
+													<span class="ts">skip</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[And for Bulk Delete selects Class "Cyber Security" and Section "Networking Fundamentals"]</span>
+													
+													<span class="td">Step skipped</span>
+												</div>
+											</div>
+											<div class="st skip test l3" 
+												tags=""
+												devices="">
+												<span class="tt">01.12.2023 20:34:39</span>&nbsp;
+												<span class="ts">skip</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[And clicks search button] started</span>
+												
+												<div class="st skip">
+													<span class="tt">01.12.2023 20:34:39</span>&nbsp;
+													<span class="ts">skip</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[And clicks search button]</span>
+													
+													<span class="td">Step skipped</span>
+												</div>
+											</div>
+											<div class="st skip test l3" 
+												tags=""
+												devices="">
+												<span class="tt">01.12.2023 20:34:39</span>&nbsp;
+												<span class="ts">skip</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[Then admitted student with first name "DIEGO" and last name "TECH" is deleted for testing purposes] started</span>
+												
+												<div class="st skip">
+													<span class="tt">01.12.2023 20:34:39</span>&nbsp;
+													<span class="ts">skip</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[Then admitted student with first name "DIEGO" and last name "TECH" is deleted for testing purposes]</span>
+													
+													<span class="td">Step skipped</span>
+												</div>
+											</div>
+											<div class="st pass test l2" 
+												tags="@Progression"
+												devices="">
+												<span class="tt">01.12.2023 20:34:44</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Student Admission] started</span>
+												<span class="category-list">
+													<span class="category badge"><i class="fa fa-tag"></i> @Progression</span>
+												</span>
+												<span class="author-list">
+												</span>
+												<span class="device-list">
+												</span>
+												
+											</div>
+											<div class="st pass test l3" 
+												tags=""
+												devices="">
+												<span class="tt">01.12.2023 20:34:44</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[Given a user is on the login page "https://mexil.it/chroma_tech_academy/test/site/login"] started</span>
+												
+												<div class="st info">
+													<span class="tt">01.12.2023 20:34:46</span>&nbsp;
+													<span class="ts">info</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[Given a user is on the login page "https://mexil.it/chroma_tech_academy/test/site/login"]</span>
+													<span class="tm"><img class='r-img' onerror='this.style.display="none"' data-featherlight='test-output/embedded3.png' src='test-output/embedded3.png'></span>
+													<span class="td"></span>
 												</div>
 											</div>
 											<div class="st pass test l3" 
 												tags=""
 												devices="">
-												<span class="tt">01.12.2023 20:07:07</span>&nbsp;
+												<span class="tt">01.12.2023 20:34:46</span>&nbsp;
 												<span class="ts">pass</span>&nbsp;&nbsp;
-												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[Then admitted student with first name "CHROMA" and last name "TECH" is deleted for testing purposes] started</span>
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[When user logs in with valid credentials username "general@teacher.com" and password "123456"] started</span>
 												
+												<div class="st pass">
+													<span class="tt">01.12.2023 20:34:59</span>&nbsp;
+													<span class="ts">pass</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[When user logs in with valid credentials username "general@teacher.com" and password "123456"]</span>
+													
+													<span class="td"></span>
+												</div>
 											</div>
-											<div class="st skip test l3" 
+											<div class="st pass test l3" 
 												tags=""
 												devices="">
-												<span class="tt">01.12.2023 20:07:07</span>&nbsp;
-												<span class="ts">skip</span>&nbsp;&nbsp;
-												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[Hooks.end()] started</span>
+												<span class="tt">01.12.2023 20:34:59</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[And navigates to Student Information Module] started</span>
 												
-												<div class="st skip">
-													<span class="tt">01.12.2023 20:07:07</span>&nbsp;
-													<span class="ts">skip</span>&nbsp;&nbsp; 
-													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[Hooks.end()]</span>
+												<div class="st pass">
+													<span class="tt">01.12.2023 20:35:00</span>&nbsp;
+													<span class="ts">pass</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[And navigates to Student Information Module]</span>
 													
-													<span class="td">Step skipped</span>
+													<span class="td"></span>
+												</div>
+											</div>
+											<div class="st pass test l3" 
+												tags=""
+												devices="">
+												<span class="tt">01.12.2023 20:35:00</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[And navigates to Student Admission Submodule] started</span>
+												
+												<div class="st pass">
+													<span class="tt">01.12.2023 20:35:04</span>&nbsp;
+													<span class="ts">pass</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[And navigates to Student Admission Submodule]</span>
+													
+													<span class="td"></span>
+												</div>
+											</div>
+											<div class="st pass test l3" 
+												tags=""
+												devices="">
+												<span class="tt">01.12.2023 20:35:04</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[Then user is directed to Student Admission page with the text "Student Admission"] started</span>
+												
+												<div class="st pass">
+													<span class="tt">01.12.2023 20:35:04</span>&nbsp;
+													<span class="ts">pass</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[Then user is directed to Student Admission page with the text "Student Admission"]</span>
+													
+													<span class="td"></span>
+												</div>
+											</div>
+											<div class="st pass test l3" 
+												tags=""
+												devices="">
+												<span class="tt">01.12.2023 20:35:04</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[And enters Student unique Admission Number "65015887"] started</span>
+												
+												<div class="st pass">
+													<span class="tt">01.12.2023 20:35:04</span>&nbsp;
+													<span class="ts">pass</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[And enters Student unique Admission Number "65015887"]</span>
+													
+													<span class="td"></span>
+												</div>
+											</div>
+											<div class="st pass test l3" 
+												tags=""
+												devices="">
+												<span class="tt">01.12.2023 20:35:04</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[And selects Class "Cyber Security" and Section "Networking Fundamentals"] started</span>
+												
+												<div class="st pass">
+													<span class="tt">01.12.2023 20:35:05</span>&nbsp;
+													<span class="ts">pass</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[And selects Class "Cyber Security" and Section "Networking Fundamentals"]</span>
+													
+													<span class="td"></span>
+												</div>
+											</div>
+											<div class="st pass test l3" 
+												tags=""
+												devices="">
+												<span class="tt">01.12.2023 20:35:05</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[And enters Students first name "SHOMIR" and last name "TECH"] started</span>
+												
+												<div class="st pass">
+													<span class="tt">01.12.2023 20:35:06</span>&nbsp;
+													<span class="ts">pass</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[And enters Students first name "SHOMIR" and last name "TECH"]</span>
+													
+													<span class="td"></span>
+												</div>
+											</div>
+											<div class="st pass test l3" 
+												tags=""
+												devices="">
+												<span class="tt">01.12.2023 20:35:06</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[And selects gender "Male"] started</span>
+												
+												<div class="st pass">
+													<span class="tt">01.12.2023 20:35:06</span>&nbsp;
+													<span class="ts">pass</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[And selects gender "Male"]</span>
+													
+													<span class="td"></span>
+												</div>
+											</div>
+											<div class="st pass test l3" 
+												tags=""
+												devices="">
+												<span class="tt">01.12.2023 20:35:06</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[And enters Date of Birth "03/10/1990"] started</span>
+												
+												<div class="st pass">
+													<span class="tt">01.12.2023 20:35:06</span>&nbsp;
+													<span class="ts">pass</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[And enters Date of Birth "03/10/1990"]</span>
+													
+													<span class="td"></span>
+												</div>
+											</div>
+											<div class="st pass test l3" 
+												tags=""
+												devices="">
+												<span class="tt">01.12.2023 20:35:06</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[And for Parent Guardian Details enters mothers name "WORST MOM"] started</span>
+												
+												<div class="st pass">
+													<span class="tt">01.12.2023 20:35:06</span>&nbsp;
+													<span class="ts">pass</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[And for Parent Guardian Details enters mothers name "WORST MOM"]</span>
+													
+													<span class="td"></span>
+												</div>
+											</div>
+											<div class="st pass test l3" 
+												tags=""
+												devices="">
+												<span class="tt">01.12.2023 20:35:06</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[And for If Guardian Is field clicks on Mother radio button] started</span>
+												
+												<div class="st pass">
+													<span class="tt">01.12.2023 20:35:07</span>&nbsp;
+													<span class="ts">pass</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[And for If Guardian Is field clicks on Mother radio button]</span>
+													
+													<span class="td"></span>
+												</div>
+											</div>
+											<div class="st pass test l3" 
+												tags=""
+												devices="">
+												<span class="tt">01.12.2023 20:35:07</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[And enters Guardian Phone number "7036871234"] started</span>
+												
+												<div class="st pass">
+													<span class="tt">01.12.2023 20:35:07</span>&nbsp;
+													<span class="ts">pass</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[And enters Guardian Phone number "7036871234"]</span>
+													
+													<span class="td"></span>
+												</div>
+											</div>
+											<div class="st pass test l3" 
+												tags=""
+												devices="">
+												<span class="tt">01.12.2023 20:35:07</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[When user clicks on save button] started</span>
+												
+												<div class="st pass">
+													<span class="tt">01.12.2023 20:35:09</span>&nbsp;
+													<span class="ts">pass</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[When user clicks on save button]</span>
+													
+													<span class="td"></span>
+												</div>
+											</div>
+											<div class="st pass test l3" 
+												tags=""
+												devices="">
+												<span class="tt">01.12.2023 20:35:09</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[Then student is succesfully saved and confirmation message displays "Record Saved Successfully"] started</span>
+												
+												<div class="st pass">
+													<span class="tt">01.12.2023 20:35:09</span>&nbsp;
+													<span class="ts">pass</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[Then student is succesfully saved and confirmation message displays "Record Saved Successfully"]</span>
+													
+													<span class="td"></span>
+												</div>
+											</div>
+											<div class="st pass test l3" 
+												tags=""
+												devices="">
+												<span class="tt">01.12.2023 20:35:09</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[When user navigates to Bulk Delete submodule] started</span>
+												
+												<div class="st pass">
+													<span class="tt">01.12.2023 20:35:11</span>&nbsp;
+													<span class="ts">pass</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[When user navigates to Bulk Delete submodule]</span>
+													
+													<span class="td"></span>
+												</div>
+											</div>
+											<div class="st pass test l3" 
+												tags=""
+												devices="">
+												<span class="tt">01.12.2023 20:35:11</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[And for Bulk Delete selects Class "Cyber Security" and Section "Networking Fundamentals"] started</span>
+												
+												<div class="st pass">
+													<span class="tt">01.12.2023 20:35:12</span>&nbsp;
+													<span class="ts">pass</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[And for Bulk Delete selects Class "Cyber Security" and Section "Networking Fundamentals"]</span>
+													
+													<span class="td"></span>
+												</div>
+											</div>
+											<div class="st pass test l3" 
+												tags=""
+												devices="">
+												<span class="tt">01.12.2023 20:35:12</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[And clicks search button] started</span>
+												
+												<div class="st pass">
+													<span class="tt">01.12.2023 20:35:14</span>&nbsp;
+													<span class="ts">pass</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[And clicks search button]</span>
+													
+													<span class="td"></span>
+												</div>
+											</div>
+											<div class="st pass test l3" 
+												tags=""
+												devices="">
+												<span class="tt">01.12.2023 20:35:14</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[Then admitted student with first name "SHOMIR" and last name "TECH" is deleted for testing purposes] started</span>
+												
+												<div class="st pass">
+													<span class="tt">01.12.2023 20:35:18</span>&nbsp;
+													<span class="ts">pass</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[Then admitted student with first name "SHOMIR" and last name "TECH" is deleted for testing purposes]</span>
+													
+													<span class="td"></span>
+												</div>
+											</div>
+											<div class="st pass test l2" 
+												tags="@Progression"
+												devices="">
+												<span class="tt">01.12.2023 20:35:23</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Student Admission] started</span>
+												<span class="category-list">
+													<span class="category badge"><i class="fa fa-tag"></i> @Progression</span>
+												</span>
+												<span class="author-list">
+												</span>
+												<span class="device-list">
+												</span>
+												
+											</div>
+											<div class="st pass test l3" 
+												tags=""
+												devices="">
+												<span class="tt">01.12.2023 20:35:23</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[Given a user is on the login page "https://mexil.it/chroma_tech_academy/stage/site/login"] started</span>
+												
+												<div class="st info">
+													<span class="tt">01.12.2023 20:35:25</span>&nbsp;
+													<span class="ts">info</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[Given a user is on the login page "https://mexil.it/chroma_tech_academy/stage/site/login"]</span>
+													<span class="tm"><img class='r-img' onerror='this.style.display="none"' data-featherlight='test-output/embedded4.png' src='test-output/embedded4.png'></span>
+													<span class="td"></span>
+												</div>
+											</div>
+											<div class="st pass test l3" 
+												tags=""
+												devices="">
+												<span class="tt">01.12.2023 20:35:26</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[When user logs in with valid credentials username "general@teacher.com" and password "123456"] started</span>
+												
+												<div class="st pass">
+													<span class="tt">01.12.2023 20:35:40</span>&nbsp;
+													<span class="ts">pass</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[When user logs in with valid credentials username "general@teacher.com" and password "123456"]</span>
+													
+													<span class="td"></span>
+												</div>
+											</div>
+											<div class="st pass test l3" 
+												tags=""
+												devices="">
+												<span class="tt">01.12.2023 20:35:40</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[And navigates to Student Information Module] started</span>
+												
+												<div class="st pass">
+													<span class="tt">01.12.2023 20:35:40</span>&nbsp;
+													<span class="ts">pass</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[And navigates to Student Information Module]</span>
+													
+													<span class="td"></span>
+												</div>
+											</div>
+											<div class="st pass test l3" 
+												tags=""
+												devices="">
+												<span class="tt">01.12.2023 20:35:40</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[And navigates to Student Admission Submodule] started</span>
+												
+												<div class="st pass">
+													<span class="tt">01.12.2023 20:35:44</span>&nbsp;
+													<span class="ts">pass</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[And navigates to Student Admission Submodule]</span>
+													
+													<span class="td"></span>
+												</div>
+											</div>
+											<div class="st pass test l3" 
+												tags=""
+												devices="">
+												<span class="tt">01.12.2023 20:35:44</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[Then user is directed to Student Admission page with the text "Student Admission"] started</span>
+												
+												<div class="st pass">
+													<span class="tt">01.12.2023 20:35:44</span>&nbsp;
+													<span class="ts">pass</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[Then user is directed to Student Admission page with the text "Student Admission"]</span>
+													
+													<span class="td"></span>
+												</div>
+											</div>
+											<div class="st pass test l3" 
+												tags=""
+												devices="">
+												<span class="tt">01.12.2023 20:35:44</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[And enters Student unique Admission Number "65015887"] started</span>
+												
+												<div class="st pass">
+													<span class="tt">01.12.2023 20:35:45</span>&nbsp;
+													<span class="ts">pass</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[And enters Student unique Admission Number "65015887"]</span>
+													
+													<span class="td"></span>
+												</div>
+											</div>
+											<div class="st pass test l3" 
+												tags=""
+												devices="">
+												<span class="tt">01.12.2023 20:35:45</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[And selects Class "Cyber Security" and Section "Networking Fundamentals"] started</span>
+												
+												<div class="st pass">
+													<span class="tt">01.12.2023 20:35:45</span>&nbsp;
+													<span class="ts">pass</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[And selects Class "Cyber Security" and Section "Networking Fundamentals"]</span>
+													
+													<span class="td"></span>
+												</div>
+											</div>
+											<div class="st pass test l3" 
+												tags=""
+												devices="">
+												<span class="tt">01.12.2023 20:35:45</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[And enters Students first name "ANDRES" and last name "TECH"] started</span>
+												
+												<div class="st pass">
+													<span class="tt">01.12.2023 20:35:46</span>&nbsp;
+													<span class="ts">pass</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[And enters Students first name "ANDRES" and last name "TECH"]</span>
+													
+													<span class="td"></span>
+												</div>
+											</div>
+											<div class="st pass test l3" 
+												tags=""
+												devices="">
+												<span class="tt">01.12.2023 20:35:46</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[And selects gender "Male"] started</span>
+												
+												<div class="st pass">
+													<span class="tt">01.12.2023 20:35:46</span>&nbsp;
+													<span class="ts">pass</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[And selects gender "Male"]</span>
+													
+													<span class="td"></span>
+												</div>
+											</div>
+											<div class="st pass test l3" 
+												tags=""
+												devices="">
+												<span class="tt">01.12.2023 20:35:46</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[And enters Date of Birth "03/10/1990"] started</span>
+												
+												<div class="st pass">
+													<span class="tt">01.12.2023 20:35:46</span>&nbsp;
+													<span class="ts">pass</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[And enters Date of Birth "03/10/1990"]</span>
+													
+													<span class="td"></span>
+												</div>
+											</div>
+											<div class="st pass test l3" 
+												tags=""
+												devices="">
+												<span class="tt">01.12.2023 20:35:46</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[And for Parent Guardian Details enters mothers name "GOOD MOM"] started</span>
+												
+												<div class="st pass">
+													<span class="tt">01.12.2023 20:35:47</span>&nbsp;
+													<span class="ts">pass</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[And for Parent Guardian Details enters mothers name "GOOD MOM"]</span>
+													
+													<span class="td"></span>
+												</div>
+											</div>
+											<div class="st pass test l3" 
+												tags=""
+												devices="">
+												<span class="tt">01.12.2023 20:35:47</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[And for If Guardian Is field clicks on Mother radio button] started</span>
+												
+												<div class="st pass">
+													<span class="tt">01.12.2023 20:35:47</span>&nbsp;
+													<span class="ts">pass</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[And for If Guardian Is field clicks on Mother radio button]</span>
+													
+													<span class="td"></span>
+												</div>
+											</div>
+											<div class="st pass test l3" 
+												tags=""
+												devices="">
+												<span class="tt">01.12.2023 20:35:47</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[And enters Guardian Phone number "7036871234"] started</span>
+												
+												<div class="st pass">
+													<span class="tt">01.12.2023 20:35:48</span>&nbsp;
+													<span class="ts">pass</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[And enters Guardian Phone number "7036871234"]</span>
+													
+													<span class="td"></span>
+												</div>
+											</div>
+											<div class="st pass test l3" 
+												tags=""
+												devices="">
+												<span class="tt">01.12.2023 20:35:48</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[When user clicks on save button] started</span>
+												
+												<div class="st pass">
+													<span class="tt">01.12.2023 20:35:50</span>&nbsp;
+													<span class="ts">pass</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[When user clicks on save button]</span>
+													
+													<span class="td"></span>
+												</div>
+											</div>
+											<div class="st pass test l3" 
+												tags=""
+												devices="">
+												<span class="tt">01.12.2023 20:35:50</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[Then student is succesfully saved and confirmation message displays "Record Saved Successfully"] started</span>
+												
+												<div class="st pass">
+													<span class="tt">01.12.2023 20:35:50</span>&nbsp;
+													<span class="ts">pass</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[Then student is succesfully saved and confirmation message displays "Record Saved Successfully"]</span>
+													
+													<span class="td"></span>
+												</div>
+											</div>
+											<div class="st pass test l3" 
+												tags=""
+												devices="">
+												<span class="tt">01.12.2023 20:35:50</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[When user navigates to Bulk Delete submodule] started</span>
+												
+												<div class="st pass">
+													<span class="tt">01.12.2023 20:35:52</span>&nbsp;
+													<span class="ts">pass</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[When user navigates to Bulk Delete submodule]</span>
+													
+													<span class="td"></span>
+												</div>
+											</div>
+											<div class="st pass test l3" 
+												tags=""
+												devices="">
+												<span class="tt">01.12.2023 20:35:52</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[And for Bulk Delete selects Class "Cyber Security" and Section "Networking Fundamentals"] started</span>
+												
+												<div class="st pass">
+													<span class="tt">01.12.2023 20:35:53</span>&nbsp;
+													<span class="ts">pass</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[And for Bulk Delete selects Class "Cyber Security" and Section "Networking Fundamentals"]</span>
+													
+													<span class="td"></span>
+												</div>
+											</div>
+											<div class="st pass test l3" 
+												tags=""
+												devices="">
+												<span class="tt">01.12.2023 20:35:53</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[And clicks search button] started</span>
+												
+												<div class="st pass">
+													<span class="tt">01.12.2023 20:35:55</span>&nbsp;
+													<span class="ts">pass</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[And clicks search button]</span>
+													
+													<span class="td"></span>
+												</div>
+											</div>
+											<div class="st pass test l3" 
+												tags=""
+												devices="">
+												<span class="tt">01.12.2023 20:35:55</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[Then admitted student with first name "ANDRES" and last name "TECH" is deleted for testing purposes] started</span>
+												
+												<div class="st pass">
+													<span class="tt">01.12.2023 20:36:00</span>&nbsp;
+													<span class="ts">pass</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[Then admitted student with first name "ANDRES" and last name "TECH" is deleted for testing purposes]</span>
+													
+													<span class="td"></span>
+												</div>
+											</div>
+											<div class="st pass test l2" 
+												tags="@Progression"
+												devices="">
+												<span class="tt">01.12.2023 20:36:05</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Student Admission] started</span>
+												<span class="category-list">
+													<span class="category badge"><i class="fa fa-tag"></i> @Progression</span>
+												</span>
+												<span class="author-list">
+												</span>
+												<span class="device-list">
+												</span>
+												
+											</div>
+											<div class="st pass test l3" 
+												tags=""
+												devices="">
+												<span class="tt">01.12.2023 20:36:05</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[Given a user is on the login page "https://chroma.mexil.it/site/login"] started</span>
+												
+												<div class="st info">
+													<span class="tt">01.12.2023 20:36:07</span>&nbsp;
+													<span class="ts">info</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[Given a user is on the login page "https://chroma.mexil.it/site/login"]</span>
+													<span class="tm"><img class='r-img' onerror='this.style.display="none"' data-featherlight='test-output/embedded5.png' src='test-output/embedded5.png'></span>
+													<span class="td"></span>
+												</div>
+											</div>
+											<div class="st pass test l3" 
+												tags=""
+												devices="">
+												<span class="tt">01.12.2023 20:36:07</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[When user logs in with valid credentials username "general@teacher.com" and password "123456"] started</span>
+												
+												<div class="st pass">
+													<span class="tt">01.12.2023 20:36:20</span>&nbsp;
+													<span class="ts">pass</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[When user logs in with valid credentials username "general@teacher.com" and password "123456"]</span>
+													
+													<span class="td"></span>
+												</div>
+											</div>
+											<div class="st pass test l3" 
+												tags=""
+												devices="">
+												<span class="tt">01.12.2023 20:36:20</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[And navigates to Student Information Module] started</span>
+												
+												<div class="st pass">
+													<span class="tt">01.12.2023 20:36:20</span>&nbsp;
+													<span class="ts">pass</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[And navigates to Student Information Module]</span>
+													
+													<span class="td"></span>
+												</div>
+											</div>
+											<div class="st pass test l3" 
+												tags=""
+												devices="">
+												<span class="tt">01.12.2023 20:36:20</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[And navigates to Student Admission Submodule] started</span>
+												
+												<div class="st pass">
+													<span class="tt">01.12.2023 20:36:24</span>&nbsp;
+													<span class="ts">pass</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[And navigates to Student Admission Submodule]</span>
+													
+													<span class="td"></span>
+												</div>
+											</div>
+											<div class="st pass test l3" 
+												tags=""
+												devices="">
+												<span class="tt">01.12.2023 20:36:24</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[Then user is directed to Student Admission page with the text "Student Admission"] started</span>
+												
+												<div class="st pass">
+													<span class="tt">01.12.2023 20:36:24</span>&nbsp;
+													<span class="ts">pass</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[Then user is directed to Student Admission page with the text "Student Admission"]</span>
+													
+													<span class="td"></span>
+												</div>
+											</div>
+											<div class="st pass test l3" 
+												tags=""
+												devices="">
+												<span class="tt">01.12.2023 20:36:24</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[And enters Student unique Admission Number "65015887"] started</span>
+												
+												<div class="st pass">
+													<span class="tt">01.12.2023 20:36:24</span>&nbsp;
+													<span class="ts">pass</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[And enters Student unique Admission Number "65015887"]</span>
+													
+													<span class="td"></span>
+												</div>
+											</div>
+											<div class="st pass test l3" 
+												tags=""
+												devices="">
+												<span class="tt">01.12.2023 20:36:24</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[And selects Class "Cyber Security" and Section "Networking Fundamentals"] started</span>
+												
+												<div class="st pass">
+													<span class="tt">01.12.2023 20:36:25</span>&nbsp;
+													<span class="ts">pass</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[And selects Class "Cyber Security" and Section "Networking Fundamentals"]</span>
+													
+													<span class="td"></span>
+												</div>
+											</div>
+											<div class="st pass test l3" 
+												tags=""
+												devices="">
+												<span class="tt">01.12.2023 20:36:25</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[And enters Students first name "LUIS" and last name "TECH"] started</span>
+												
+												<div class="st pass">
+													<span class="tt">01.12.2023 20:36:26</span>&nbsp;
+													<span class="ts">pass</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[And enters Students first name "LUIS" and last name "TECH"]</span>
+													
+													<span class="td"></span>
+												</div>
+											</div>
+											<div class="st pass test l3" 
+												tags=""
+												devices="">
+												<span class="tt">01.12.2023 20:36:26</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[And selects gender "Male"] started</span>
+												
+												<div class="st pass">
+													<span class="tt">01.12.2023 20:36:26</span>&nbsp;
+													<span class="ts">pass</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[And selects gender "Male"]</span>
+													
+													<span class="td"></span>
+												</div>
+											</div>
+											<div class="st pass test l3" 
+												tags=""
+												devices="">
+												<span class="tt">01.12.2023 20:36:26</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[And enters Date of Birth "03/10/1990"] started</span>
+												
+												<div class="st pass">
+													<span class="tt">01.12.2023 20:36:26</span>&nbsp;
+													<span class="ts">pass</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[And enters Date of Birth "03/10/1990"]</span>
+													
+													<span class="td"></span>
+												</div>
+											</div>
+											<div class="st pass test l3" 
+												tags=""
+												devices="">
+												<span class="tt">01.12.2023 20:36:26</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[And for Parent Guardian Details enters mothers name "BETTER MOM"] started</span>
+												
+												<div class="st pass">
+													<span class="tt">01.12.2023 20:36:26</span>&nbsp;
+													<span class="ts">pass</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[And for Parent Guardian Details enters mothers name "BETTER MOM"]</span>
+													
+													<span class="td"></span>
+												</div>
+											</div>
+											<div class="st pass test l3" 
+												tags=""
+												devices="">
+												<span class="tt">01.12.2023 20:36:26</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[And for If Guardian Is field clicks on Mother radio button] started</span>
+												
+												<div class="st pass">
+													<span class="tt">01.12.2023 20:36:27</span>&nbsp;
+													<span class="ts">pass</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[And for If Guardian Is field clicks on Mother radio button]</span>
+													
+													<span class="td"></span>
+												</div>
+											</div>
+											<div class="st pass test l3" 
+												tags=""
+												devices="">
+												<span class="tt">01.12.2023 20:36:27</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[And enters Guardian Phone number "7036871234"] started</span>
+												
+												<div class="st pass">
+													<span class="tt">01.12.2023 20:36:27</span>&nbsp;
+													<span class="ts">pass</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[And enters Guardian Phone number "7036871234"]</span>
+													
+													<span class="td"></span>
+												</div>
+											</div>
+											<div class="st pass test l3" 
+												tags=""
+												devices="">
+												<span class="tt">01.12.2023 20:36:27</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[When user clicks on save button] started</span>
+												
+												<div class="st pass">
+													<span class="tt">01.12.2023 20:36:29</span>&nbsp;
+													<span class="ts">pass</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[When user clicks on save button]</span>
+													
+													<span class="td"></span>
+												</div>
+											</div>
+											<div class="st pass test l3" 
+												tags=""
+												devices="">
+												<span class="tt">01.12.2023 20:36:29</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[Then student is succesfully saved and confirmation message displays "Record Saved Successfully"] started</span>
+												
+												<div class="st pass">
+													<span class="tt">01.12.2023 20:36:29</span>&nbsp;
+													<span class="ts">pass</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[Then student is succesfully saved and confirmation message displays "Record Saved Successfully"]</span>
+													
+													<span class="td"></span>
+												</div>
+											</div>
+											<div class="st pass test l3" 
+												tags=""
+												devices="">
+												<span class="tt">01.12.2023 20:36:29</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[When user navigates to Bulk Delete submodule] started</span>
+												
+												<div class="st pass">
+													<span class="tt">01.12.2023 20:36:31</span>&nbsp;
+													<span class="ts">pass</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[When user navigates to Bulk Delete submodule]</span>
+													
+													<span class="td"></span>
+												</div>
+											</div>
+											<div class="st pass test l3" 
+												tags=""
+												devices="">
+												<span class="tt">01.12.2023 20:36:31</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[And for Bulk Delete selects Class "Cyber Security" and Section "Networking Fundamentals"] started</span>
+												
+												<div class="st pass">
+													<span class="tt">01.12.2023 20:36:32</span>&nbsp;
+													<span class="ts">pass</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[And for Bulk Delete selects Class "Cyber Security" and Section "Networking Fundamentals"]</span>
+													
+													<span class="td"></span>
+												</div>
+											</div>
+											<div class="st pass test l3" 
+												tags=""
+												devices="">
+												<span class="tt">01.12.2023 20:36:32</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[And clicks search button] started</span>
+												
+												<div class="st pass">
+													<span class="tt">01.12.2023 20:36:34</span>&nbsp;
+													<span class="ts">pass</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[And clicks search button]</span>
+													
+													<span class="td"></span>
+												</div>
+											</div>
+											<div class="st pass test l3" 
+												tags=""
+												devices="">
+												<span class="tt">01.12.2023 20:36:34</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[Then admitted student with first name "LUIS" and last name "TECH" is deleted for testing purposes] started</span>
+												
+												<div class="st pass">
+													<span class="tt">01.12.2023 20:36:38</span>&nbsp;
+													<span class="ts">pass</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[Then admitted student with first name "LUIS" and last name "TECH" is deleted for testing purposes]</span>
+													
+													<span class="td"></span>
 												</div>
 											</div>
 											</div>

@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite failures="1" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="0.107357">
-    <testcase classname="Student Admission Test Scenarios" name="Student Admission" time="0.107357">
-        <failure message="The scenario has pending or undefined step(s)"><![CDATA[Given a user is on the login page "https://mexil.it/chroma_tech_academy/dev/site/login".skipped
-When user logs in with valid credentials username "general@teacher.com" and password "123456".skipped
+<testsuite failures="2" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="5" time="175.350688">
+    <testcase classname="Student Admission Test Scenarios" name="Student Admission" time="28.734038">
+        <failure message="org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@id='form-username']&quot;}&#10;  (Session info: chrome=109.0.5414.87)&#10;For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element&#10;Build info: version: '4.7.2', revision: '4d4020c3b7'&#10;System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '15.0.1'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [dd3ff444e4de90eecea34a9b613e7bfc, findElement {using=xpath, value=//input[@id='form-username']}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.87, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: /var/folders/ph/bzj7vj0x6js...}, goog:chromeOptions: {debuggerAddress: localhost:51123}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:51123/devtoo..., se:cdpVersion: 109.0.5414.87, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: dd3ff444e4de90eecea34a9b613e7bfc&#10;&#9;at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)&#10;&#9;at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)&#10;&#9;at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)&#10;&#9;at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)&#10;&#9;at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)&#10;&#9;at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)&#10;&#9;at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)&#10;&#9;at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)&#10;&#9;at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)&#10;&#9;at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)&#10;&#9;at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:535)&#10;&#9;at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)&#10;&#9;at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:351)&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:343)&#10;&#9;at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)&#10;&#9;at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)&#10;&#9;at com.sun.proxy.$Proxy20.sendKeys(Unknown Source)&#10;&#9;at com.chroma.stepDefinitions.SampleTestStepDef.user_logs_in_with_valid_credentials_username_and_password(SampleTestStepDef.java:27)&#10;&#9;at ✽.user logs in with valid credentials username &quot;general@teacher.com&quot; and password &quot;123456&quot;(file:src/test/java/com/chroma/features/Student%20Admission.feature:6)&#10;"><![CDATA[Given a user is on the login page "https://mexil.it/chroma_tech_academy/dev/site/login".passed
+When user logs in with valid credentials username "general@teacher.com" and password "123456".failed
 And navigates to Student Information Module.................................skipped
 And navigates to Student Admission Submodule................................skipped
 Then user is directed to Student Admission page with the text "Student Admission".skipped
-And enters Student unique Admission Number "12345"..........................skipped
+And enters Student unique Admission Number "65015887".......................skipped
 And selects Class "SDET" and Section "Testing Fundamentals".................skipped
 And enters Students first name "CHROMA" and last name "TECH"................skipped
 And selects gender "Female".................................................skipped
@@ -19,8 +19,159 @@ Then student is succesfully saved and confirmation message displays "Record Save
 When user navigates to Bulk Delete submodule................................skipped
 And for Bulk Delete selects Class "SDET" and Section "Testing Fundamentals".skipped
 And clicks search button....................................................skipped
-Then admitted student "Chroma Tech" is deleted for testing purposes.........skipped
-Then admitted student with first name "CHROMA" and last name "TECH" is deleted for testing purposes.undefined
+Then admitted student with first name "CHROMA" and last name "TECH" is deleted for testing purposes.skipped
+
+StackTrace:
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//input[@id='form-username']"}
+  (Session info: chrome=109.0.5414.87)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.7.2', revision: '4d4020c3b7'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '15.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [dd3ff444e4de90eecea34a9b613e7bfc, findElement {using=xpath, value=//input[@id='form-username']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.87, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: /var/folders/ph/bzj7vj0x6js...}, goog:chromeOptions: {debuggerAddress: localhost:51123}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:51123/devtoo..., se:cdpVersion: 109.0.5414.87, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: dd3ff444e4de90eecea34a9b613e7bfc
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:535)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:351)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:343)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at com.sun.proxy.$Proxy20.sendKeys(Unknown Source)
+	at com.chroma.stepDefinitions.SampleTestStepDef.user_logs_in_with_valid_credentials_username_and_password(SampleTestStepDef.java:27)
+	at ✽.user logs in with valid credentials username "general@teacher.com" and password "123456"(file:src/test/java/com/chroma/features/Student%20Admission.feature:6)
 ]]></failure>
+    </testcase>
+    <testcase classname="Student Admission Test Scenarios" name="Student Admission 2" time="26.981417">
+        <failure message="org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@id='form-username']&quot;}&#10;  (Session info: chrome=109.0.5414.87)&#10;For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element&#10;Build info: version: '4.7.2', revision: '4d4020c3b7'&#10;System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '15.0.1'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [a24e0900c635c64d6572da99b23d4aee, findElement {using=xpath, value=//input[@id='form-username']}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.87, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: /var/folders/ph/bzj7vj0x6js...}, goog:chromeOptions: {debuggerAddress: localhost:51251}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:51251/devtoo..., se:cdpVersion: 109.0.5414.87, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: a24e0900c635c64d6572da99b23d4aee&#10;&#9;at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)&#10;&#9;at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)&#10;&#9;at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)&#10;&#9;at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)&#10;&#9;at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)&#10;&#9;at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)&#10;&#9;at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)&#10;&#9;at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)&#10;&#9;at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)&#10;&#9;at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)&#10;&#9;at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:535)&#10;&#9;at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)&#10;&#9;at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:351)&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:343)&#10;&#9;at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)&#10;&#9;at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)&#10;&#9;at com.sun.proxy.$Proxy20.sendKeys(Unknown Source)&#10;&#9;at com.chroma.stepDefinitions.SampleTestStepDef.user_logs_in_with_valid_credentials_username_and_password(SampleTestStepDef.java:27)&#10;&#9;at ✽.user logs in with valid credentials username &quot;general@teacher.com&quot; and password &quot;123456&quot;(file:src/test/java/com/chroma/features/Student%20Admission.feature:6)&#10;"><![CDATA[Given a user is on the login page "https://mexil.it/chroma_tech_academy/dev/site/login".passed
+When user logs in with valid credentials username "general@teacher.com" and password "123456".failed
+And navigates to Student Information Module.................................skipped
+And navigates to Student Admission Submodule................................skipped
+Then user is directed to Student Admission page with the text "Student Admission".skipped
+And enters Student unique Admission Number "65015887".......................skipped
+And selects Class "Cyber Security" and Section "Networking Fundamentals"....skipped
+And enters Students first name "DIEGO" and last name "TECH".................skipped
+And selects gender "Male"...................................................skipped
+And enters Date of Birth "03/10/1990".......................................skipped
+And for Parent Guardian Details enters mothers name "BEST MOM"..............skipped
+And for If Guardian Is field clicks on Mother radio button..................skipped
+And enters Guardian Phone number "7036871234"...............................skipped
+When user clicks on save button.............................................skipped
+Then student is succesfully saved and confirmation message displays "Record Saved Successfully".skipped
+When user navigates to Bulk Delete submodule................................skipped
+And for Bulk Delete selects Class "Cyber Security" and Section "Networking Fundamentals".skipped
+And clicks search button....................................................skipped
+Then admitted student with first name "DIEGO" and last name "TECH" is deleted for testing purposes.skipped
+
+StackTrace:
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//input[@id='form-username']"}
+  (Session info: chrome=109.0.5414.87)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.7.2', revision: '4d4020c3b7'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '15.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [a24e0900c635c64d6572da99b23d4aee, findElement {using=xpath, value=//input[@id='form-username']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.87, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: /var/folders/ph/bzj7vj0x6js...}, goog:chromeOptions: {debuggerAddress: localhost:51251}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:51251/devtoo..., se:cdpVersion: 109.0.5414.87, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: a24e0900c635c64d6572da99b23d4aee
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:535)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:351)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:343)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at com.sun.proxy.$Proxy20.sendKeys(Unknown Source)
+	at com.chroma.stepDefinitions.SampleTestStepDef.user_logs_in_with_valid_credentials_username_and_password(SampleTestStepDef.java:27)
+	at ✽.user logs in with valid credentials username "general@teacher.com" and password "123456"(file:src/test/java/com/chroma/features/Student%20Admission.feature:6)
+]]></failure>
+    </testcase>
+    <testcase classname="Student Admission Test Scenarios" name="Student Admission 3" time="39.40919">
+        <system-out><![CDATA[Given a user is on the login page "https://mexil.it/chroma_tech_academy/test/site/login".passed
+When user logs in with valid credentials username "general@teacher.com" and password "123456".passed
+And navigates to Student Information Module.................................passed
+And navigates to Student Admission Submodule................................passed
+Then user is directed to Student Admission page with the text "Student Admission".passed
+And enters Student unique Admission Number "65015887".......................passed
+And selects Class "Cyber Security" and Section "Networking Fundamentals"....passed
+And enters Students first name "SHOMIR" and last name "TECH"................passed
+And selects gender "Male"...................................................passed
+And enters Date of Birth "03/10/1990".......................................passed
+And for Parent Guardian Details enters mothers name "WORST MOM".............passed
+And for If Guardian Is field clicks on Mother radio button..................passed
+And enters Guardian Phone number "7036871234"...............................passed
+When user clicks on save button.............................................passed
+Then student is succesfully saved and confirmation message displays "Record Saved Successfully".passed
+When user navigates to Bulk Delete submodule................................passed
+And for Bulk Delete selects Class "Cyber Security" and Section "Networking Fundamentals".passed
+And clicks search button....................................................passed
+Then admitted student with first name "SHOMIR" and last name "TECH" is deleted for testing purposes.passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Student Admission Test Scenarios" name="Student Admission 4" time="41.507549">
+        <system-out><![CDATA[Given a user is on the login page "https://mexil.it/chroma_tech_academy/stage/site/login".passed
+When user logs in with valid credentials username "general@teacher.com" and password "123456".passed
+And navigates to Student Information Module.................................passed
+And navigates to Student Admission Submodule................................passed
+Then user is directed to Student Admission page with the text "Student Admission".passed
+And enters Student unique Admission Number "65015887".......................passed
+And selects Class "Cyber Security" and Section "Networking Fundamentals"....passed
+And enters Students first name "ANDRES" and last name "TECH"................passed
+And selects gender "Male"...................................................passed
+And enters Date of Birth "03/10/1990".......................................passed
+And for Parent Guardian Details enters mothers name "GOOD MOM"..............passed
+And for If Guardian Is field clicks on Mother radio button..................passed
+And enters Guardian Phone number "7036871234"...............................passed
+When user clicks on save button.............................................passed
+Then student is succesfully saved and confirmation message displays "Record Saved Successfully".passed
+When user navigates to Bulk Delete submodule................................passed
+And for Bulk Delete selects Class "Cyber Security" and Section "Networking Fundamentals".passed
+And clicks search button....................................................passed
+Then admitted student with first name "ANDRES" and last name "TECH" is deleted for testing purposes.passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Student Admission Test Scenarios" name="Student Admission 5" time="38.718494">
+        <system-out><![CDATA[Given a user is on the login page "https://chroma.mexil.it/site/login"......passed
+When user logs in with valid credentials username "general@teacher.com" and password "123456".passed
+And navigates to Student Information Module.................................passed
+And navigates to Student Admission Submodule................................passed
+Then user is directed to Student Admission page with the text "Student Admission".passed
+And enters Student unique Admission Number "65015887".......................passed
+And selects Class "Cyber Security" and Section "Networking Fundamentals"....passed
+And enters Students first name "LUIS" and last name "TECH"..................passed
+And selects gender "Male"...................................................passed
+And enters Date of Birth "03/10/1990".......................................passed
+And for Parent Guardian Details enters mothers name "BETTER MOM"............passed
+And for If Guardian Is field clicks on Mother radio button..................passed
+And enters Guardian Phone number "7036871234"...............................passed
+When user clicks on save button.............................................passed
+Then student is succesfully saved and confirmation message displays "Record Saved Successfully".passed
+When user navigates to Bulk Delete submodule................................passed
+And for Bulk Delete selects Class "Cyber Security" and Section "Networking Fundamentals".passed
+And clicks search button....................................................passed
+Then admitted student with first name "LUIS" and last name "TECH" is deleted for testing purposes.passed
+]]></system-out>
     </testcase>
 </testsuite>
