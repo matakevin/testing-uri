@@ -114,10 +114,13 @@ public class StudentAdmissionStepDef {
         bulkDeletePage.searchButton.click();
     }
 
-    @Then("admitted student {string} is deleted for testing purposes")
-    public void admitted_student_is_deleted_for_testing_purposes(String studentRecord) throws InterruptedException {
-
-        BulkDeletePage.studentRecordLocator(studentRecord).click();
+    @Then("admitted student with first name {string} and last name {string} is deleted for testing purposes")
+    public void admitted_student_with_first_name_and_last_name_is_deleted_for_testing_purposes(String firstName,
+            String lastName) throws InterruptedException {
+        BulkDeletePage.studentRecordLocator(firstName + lastName).click();
         Thread.sleep(2000);
+        bulkDeletePage.deleteButton.click();
+        Thread.sleep(2000);
+        WebDriverUtils.driver.switchTo().alert().accept();
     }
 }

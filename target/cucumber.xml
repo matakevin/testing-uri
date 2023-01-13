@@ -1,13 +1,26 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="32.3673">
-    <testcase classname="Student Admission Test Scenarios" name="Student Admission" time="32.3673">
-        <system-out><![CDATA[Given a user is on the login page "https://mexil.it/chroma_tech_academy/dev/site/login".passed
-When user logs in with valid credentials username "general@teacher.com" and password "123456".passed
-And navigates to Student Information Module.................................passed
-When user navigates to Bulk Delete submodule................................passed
-And for Bulk Delete selects Class "SDET" and Section "Testing Fundamentals".passed
-And clicks search button....................................................passed
-Then admitted student "Chroma Tech" is deleted for testing purposes.........passed
-]]></system-out>
+<testsuite failures="1" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="0.107357">
+    <testcase classname="Student Admission Test Scenarios" name="Student Admission" time="0.107357">
+        <failure message="The scenario has pending or undefined step(s)"><![CDATA[Given a user is on the login page "https://mexil.it/chroma_tech_academy/dev/site/login".skipped
+When user logs in with valid credentials username "general@teacher.com" and password "123456".skipped
+And navigates to Student Information Module.................................skipped
+And navigates to Student Admission Submodule................................skipped
+Then user is directed to Student Admission page with the text "Student Admission".skipped
+And enters Student unique Admission Number "12345"..........................skipped
+And selects Class "SDET" and Section "Testing Fundamentals".................skipped
+And enters Students first name "CHROMA" and last name "TECH"................skipped
+And selects gender "Female".................................................skipped
+And enters Date of Birth "04/01/1990".......................................skipped
+And for Parent Guardian Details enters mothers name "CHROMA MOM"............skipped
+And for If Guardian Is field clicks on Mother radio button..................skipped
+And enters Guardian Phone number "7036875816"...............................skipped
+When user clicks on save button.............................................skipped
+Then student is succesfully saved and confirmation message displays "Record Saved Successfully".skipped
+When user navigates to Bulk Delete submodule................................skipped
+And for Bulk Delete selects Class "SDET" and Section "Testing Fundamentals".skipped
+And clicks search button....................................................skipped
+Then admitted student "Chroma Tech" is deleted for testing purposes.........skipped
+Then admitted student with first name "CHROMA" and last name "TECH" is deleted for testing purposes.undefined
+]]></failure>
     </testcase>
 </testsuite>

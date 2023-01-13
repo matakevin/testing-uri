@@ -1,23 +1,28 @@
 Feature: Student Admission Test Scenarios
 
   @Progression
-  Scenario: Student Admission
-    Given a user is on the login page "https://mexil.it/chroma_tech_academy/dev/site/login"
-    When user logs in with valid credentials username "general@teacher.com" and password "123456"
+  Scenario Outline: Student Admission
+    Given a user is on the login page "<URL>"
+    When user logs in with valid credentials username "<USERNAME>" and password "<PASSWORD>"
     And navigates to Student Information Module
-    #And navigates to Student Admission Submodule
-    #Then user is directed to Student Admission page with the text "Student Admission"
-    #And enters Student unique Admission Number "12345"
-    #And selects Class "SDET" and Section "Testing Fundamentals"  
-    #And enters Students first name "Chroma" and last name "Tech"
-    #And selects gender "Female"
-    #And enters Date of Birth "04/01/1990"
-    #And for Parent Guardian Details enters mothers name "Chroma Mom"
-    #And for If Guardian Is field clicks on Mother radio button
-    #And enters Guardian Phone number "7036875816"
-    #When user clicks on save button
-    #Then student is succesfully saved and confirmation message displays "Record Saved Successfully"
+    And navigates to Student Admission Submodule
+    Then user is directed to Student Admission page with the text "Student Admission"
+    And enters Student unique Admission Number "<ADMISSION NUMBER>"
+    And selects Class "<CLASS>" and Section "<SECTION>"
+    And enters Students first name "<FIRST NAME>" and last name "<LAST NAME>"
+    And selects gender "<GENDER>"
+    And enters Date of Birth "<DOB>"
+    And for Parent Guardian Details enters mothers name "<MOTHERS NAME>"
+    And for If Guardian Is field clicks on Mother radio button
+    And enters Guardian Phone number "<GUARDIAN PHONE NUMBER>"
+    When user clicks on save button
+    Then student is succesfully saved and confirmation message displays "Record Saved Successfully"
     When user navigates to Bulk Delete submodule
-    And for Bulk Delete selects Class "SDET" and Section "Testing Fundamentals"
+    And for Bulk Delete selects Class "<CLASS>" and Section "<SECTION>"
     And clicks search button
     Then admitted student "Chroma Tech" is deleted for testing purposes
+    Then admitted student with first name "<FIRST NAME>" and last name "<LAST NAME>" is deleted for testing purposes
+
+    Examples: 
+      | URL                                                 | USERNAME            | PASSWORD | ADMISSION NUMBER | CLASS | SECTION              | FIRST NAME | LAST NAME | GENDER | DOB        | MOTHERS NAME | GUARDIAN PHONE NUMBER |
+      | https://mexil.it/chroma_tech_academy/dev/site/login | general@teacher.com |   123456 |            12345 | SDET  | Testing Fundamentals | CHROMA     | TECH      | Female | 04/01/1990 | CHROMA MOM   |            7036875816 |
